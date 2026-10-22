@@ -1,0 +1,211 @@
+{
+ "seedler": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "ozet": {
+  "ppo_2025": {
+   "tohumlar": [
+    9.7,
+    13.8,
+    53.9,
+    14.8,
+    2.6
+   ],
+   "ort": 19.0,
+   "std": 18.0,
+   "min": 2.6,
+   "max": 53.9,
+   "sharpe_ort": 0.73,
+   "kazanan_tohum_sayisi_tum_evren": null,
+   "kazanan_tum_evren": 5,
+   "kazanan_abd": 1
+  },
+  "ppo_2026": {
+   "tohumlar": [
+    10.4,
+    11.5,
+    8.6,
+    9.2,
+    19.9
+   ],
+   "ort": 11.9,
+   "std": 4.1,
+   "min": 8.6,
+   "max": 19.9,
+   "sharpe_ort": 0.7,
+   "kazanan_tohum_sayisi_tum_evren": null,
+   "kazanan_tum_evren": 5,
+   "kazanan_abd": 1
+  },
+  "a2c_2025": {
+   "tohumlar": [
+    24.7,
+    16.1,
+    31.0,
+    16.0,
+    18.2
+   ],
+   "ort": 21.2,
+   "std": 5.8,
+   "min": 16.0,
+   "max": 31.0,
+   "sharpe_ort": 0.93,
+   "kazanan_tohum_sayisi_tum_evren": null,
+   "kazanan_tum_evren": 5,
+   "kazanan_abd": 2
+  },
+  "a2c_2026": {
+   "tohumlar": [
+    8.0,
+    9.8,
+    9.4,
+    16.7,
+    21.4
+   ],
+   "ort": 13.1,
+   "std": 5.1,
+   "min": 8.0,
+   "max": 21.4,
+   "sharpe_ort": 0.92,
+   "kazanan_tohum_sayisi_tum_evren": null,
+   "kazanan_tum_evren": 5,
+   "kazanan_abd": 2
+  }
+ },
+ "ham": {
+  "0": {
+   "ppo": {
+    "2025": {
+     "total_pct": 9.7,
+     "sharpe": 0.48,
+     "maxdd": -24.6
+    },
+    "2026": {
+     "total_pct": 10.4,
+     "sharpe": 0.56,
+     "maxdd": -18.9
+    }
+   },
+   "a2c": {
+    "2025": {
+     "total_pct": 24.7,
+     "sharpe": 1.04,
+     "maxdd": -24.0
+    },
+    "2026": {
+     "total_pct": 8.0,
+     "sharpe": 0.64,
+     "maxdd": -12.3
+    }
+   }
+  },
+  "1": {
+   "ppo": {
+    "2025": {
+     "total_pct": 13.8,
+     "sharpe": 0.67,
+     "maxdd": -22.1
+    },
+    "2026": {
+     "total_pct": 11.5,
+     "sharpe": 0.75,
+     "maxdd": -16.6
+    }
+   },
+   "a2c": {
+    "2025": {
+     "total_pct": 16.1,
+     "sharpe": 0.61,
+     "maxdd": -31.2
+    },
+    "2026": {
+     "total_pct": 9.8,
+     "sharpe": 0.66,
+     "maxdd": -12.3
+    }
+   }
+  },
+  "2": {
+   "ppo": {
+    "2025": {
+     "total_pct": 53.9,
+     "sharpe": 1.58,
+     "maxdd": -26.9
+    },
+    "2026": {
+     "total_pct": 8.6,
+     "sharpe": 0.6,
+     "maxdd": -12.3
+    }
+   },
+   "a2c": {
+    "2025": {
+     "total_pct": 31.0,
+     "sharpe": 1.3,
+     "maxdd": -22.5
+    },
+    "2026": {
+     "total_pct": 9.4,
+     "sharpe": 0.55,
+     "maxdd": -22.6
+    }
+   }
+  },
+  "3": {
+   "ppo": {
+    "2025": {
+     "total_pct": 14.8,
+     "sharpe": 0.69,
+     "maxdd": -24.4
+    },
+    "2026": {
+     "total_pct": 9.2,
+     "sharpe": 0.62,
+     "maxdd": -14.2
+    }
+   },
+   "a2c": {
+    "2025": {
+     "total_pct": 16.0,
+     "sharpe": 0.77,
+     "maxdd": -21.7
+    },
+    "2026": {
+     "total_pct": 16.7,
+     "sharpe": 1.14,
+     "maxdd": -13.6
+    }
+   }
+  },
+  "4": {
+   "ppo": {
+    "2025": {
+     "total_pct": 2.6,
+     "sharpe": 0.22,
+     "maxdd": -27.0
+    },
+    "2026": {
+     "total_pct": 19.9,
+     "sharpe": 0.95,
+     "maxdd": -18.7
+    }
+   },
+   "a2c": {
+    "2025": {
+     "total_pct": 18.2,
+     "sharpe": 0.91,
+     "maxdd": -19.5
+    },
+    "2026": {
+     "total_pct": 21.4,
+     "sharpe": 1.62,
+     "maxdd": -11.3
+    }
+   }
+  }
+ }
+}

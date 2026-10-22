@@ -72,5 +72,14 @@ if fq:
           "| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |", "|---|---:|---:|---:|---:|",
           f"| freqtrade RSI sablonu (hyperopt) | {fq['2025']['total_pct']} | {fq['2025']['sharpe_gunluk_cuzdan']} | {fq['2026']['total_pct']} | {fq['2026']['sharpe_gunluk_cuzdan']} |", "",
           "Hisseler Binance cift adlariyla etiketlendi (repos_tests/freqtrade/ft_mapping.json); icerideki veri hisse verisi. Yatirim tavsiyesi degildir.", ""]
+
+fs = _load("results/finrl_seeds_summary.json")
+if fs:
+    o_ = fs["ozet"]
+    L += ["## FinRL kararlilik testi (5 rastgele tohum, birlesik evren)", "",
+          "| Ajan, yil | Tohum getirileri % | Ortalama | Std | Tum evren al-ve-tut'u gecen | ABD al-ve-tut'u gecen |", "|---|---|---:|---:|---:|---:|"]
+    for k_, v_ in o_.items():
+        L.append(f"| {k_.upper().replace('_', ' ')} | {', '.join(str(x) for x in v_['tohumlar'])} | {v_['ort']} | {v_['std']} | {v_['kazanan_tum_evren']}/5 | {v_['kazanan_abd']}/5 |")
+    L += ["", "Referans (al-ve-tut %): tum evren 2025 +2.1, 2026 +0.4; sadece ABD 2025 +24.5, 2026 +15.5. Yatirim tavsiyesi degildir.", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))
