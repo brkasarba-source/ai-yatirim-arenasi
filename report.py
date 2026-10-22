@@ -65,5 +65,12 @@ if fc and qc:
     _r("FinRL A2C", fc["a2c"]["2025"], fc["a2c"]["2026"])
     _r("qlib LightGBM ilk 10", qc["2025"]["qlib_lgbm_top10"], qc["2026"]["qlib_lgbm_top10"])
     L += ["", f"qlib IC: {qc['ic_ort']}, ortalama BIST agirligi: %{qc['ortalama_agirlik_bist_pct']}. FinRL tek tohum, 100 bin adim. Yatirim tavsiyesi degildir.", ""]
+
+fq = _load("results/freqtrade_result.json")
+if fq:
+    L += ["## freqtrade (birlesik evren, 30 hisse)", "",
+          "| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |", "|---|---:|---:|---:|---:|",
+          f"| freqtrade RSI sablonu (hyperopt) | {fq['2025']['total_pct']} | {fq['2025']['sharpe_gunluk_cuzdan']} | {fq['2026']['total_pct']} | {fq['2026']['sharpe_gunluk_cuzdan']} |", "",
+          "Hisseler Binance cift adlariyla etiketlendi (repos_tests/freqtrade/ft_mapping.json); icerideki veri hisse verisi. Yatirim tavsiyesi degildir.", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))

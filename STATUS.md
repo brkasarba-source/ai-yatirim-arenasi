@@ -42,3 +42,11 @@ Sonuc: hicbiri iki yilda tutarli bicimde al-ve-tut'u gecemedi. FinRL egitimi kis
 | qlib LightGBM ilk 10 | -48.6 | -2.97 | -29.2 | -2.14 |
 
 qlib IC: -0.006, ortalama BIST agirligi: %62.3. FinRL tek tohum, 100 bin adim. Yatirim tavsiyesi degildir.
+
+## freqtrade (birlesik evren, 30 hisse)
+
+| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |
+|---|---:|---:|---:|---:|
+| freqtrade RSI sablonu (hyperopt) | 3.61 | 0.29 | 2.56 | 0.28 |
+
+Hisseler Binance cift adlariyla etiketlendi (repos_tests/freqtrade/ft_mapping.json); icerideki veri hisse verisi. Yatirim tavsiyesi degildir.

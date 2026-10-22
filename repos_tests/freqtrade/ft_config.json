@@ -1,0 +1,27 @@
+{
+  "max_open_trades": 10,
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 1.0,
+  "fiat_display_currency": "",
+  "dry_run": true,
+  "dry_run_wallet": 1000000,
+  "timeframe": "1d",
+  "trading_mode": "spot",
+  "unfilledtimeout": {"entry": 10, "exit": 10, "unit": "minutes"},
+  "entry_pricing": {"price_side": "same", "use_order_book": false},
+  "exit_pricing": {"price_side": "same", "use_order_book": false},
+  "exchange": {
+    "name": "binance",
+    "key": "", "secret": "",
+    "ccxt_config": {}, "ccxt_async_config": {},
+    "pair_whitelist": ["BTC/USDT", "ETH/USDT", "BNB/USDT", "LTC/USDT", "ADA/USDT", "XRP/USDT", "XLM/USDT", "TRX/USDT", "ETC/USDT", "VET/USDT", "LINK/USDT", "THETA/USDT", "ATOM/USDT", "ALGO/USDT", "DOGE/USDT", "XTZ/USDT", "HBAR/USDT", "BCH/USDT", "SOL/USDT", "MANA/USDT", "SAND/USDT", "DOT/USDT", "EGLD/USDT", "UNI/USDT", "AVAX/USDT", "AAVE/USDT", "NEAR/USDT", "FIL/USDT", "AXS/USDT", "ICP/USDT"],
+    "pair_blacklist": []
+  },
+  "pairlists": [{"method": "StaticPairList"}],
+  "datadir": "ft_user/data/binance",
+  "user_data_dir": "ft_user",
+  "bot_name": "stock-test",
+  "initial_state": "running",
+  "internals": {"process_throttle_secs": 5}
+}

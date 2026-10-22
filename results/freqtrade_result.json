@@ -1,0 +1,6 @@
+{
+ "strateji": "freqtrade advanced sablon (RSI), 150 epoch hyperopt 2016-2024, SharpeHyperOptLoss",
+ "parametreler": {"buy_rsi": 38, "sell_rsi": 68, "stoploss": -0.305},
+ "2025": {"total_pct": 3.61, "sharpe_gunluk_cuzdan": 0.29, "maxdd_cuzdan_pct": -16.66, "islem": 53},
+ "2026": {"total_pct": 2.56, "sharpe_gunluk_cuzdan": 0.28, "maxdd_cuzdan_pct": -12.39, "islem": 52}
+}
