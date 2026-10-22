@@ -1,0 +1,39 @@
+{
+ "adimlar": 60000,
+ "buy_hold": {
+  "2025": {
+   "total_pct": 24.5,
+   "sharpe": 1.03,
+   "maxdd": -24.5
+  },
+  "2026": {
+   "total_pct": 15.5,
+   "sharpe": 1.29,
+   "maxdd": -9.5
+  }
+ },
+ "ppo": {
+  "2025": {
+   "total_pct": 22.6,
+   "sharpe": 1.05,
+   "maxdd": -20.7
+  },
+  "2026": {
+   "total_pct": 4.7,
+   "sharpe": 0.42,
+   "maxdd": -15.0
+  }
+ },
+ "a2c": {
+  "2025": {
+   "total_pct": 15.5,
+   "sharpe": 0.56,
+   "maxdd": -36.7
+  },
+  "2026": {
+   "total_pct": -3.1,
+   "sharpe": -0.02,
+   "maxdd": -17.1
+  }
+ }
+}

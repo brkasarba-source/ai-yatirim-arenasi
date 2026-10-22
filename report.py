@@ -33,5 +33,24 @@ for r in m:
     pos = f"{int(last_sig.get(r['strategy'], 0))}/{n} hisse"
     L.append(f"| {r['strategy']} | {r['return_pct']:.2f} | {r['maxdd_pct']:.2f} | {pos} |")
 L += ["", f"Son sinyal tarihi: {sig_date}. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.", ""]
+import os
+
+
+def _load(p):
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
+fr, ql = _load("results/finrl_result.json"), _load("results/qlib_result.json")
+if fr and ql:
+    L += ["## Gercek repolar: FinRL ve qlib (2025 ve 2026 testi)", "",
+          "Egitim 2016-2024 (qlib: 2016-2022), ajanlarin hic gormedigi donemlerde test. Ayni 10 hisse/ETF, %0,15 maliyet.", "",
+          "| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |", "|---|---:|---:|---:|---:|"]
+    rows_ = [("Al-ve-tut (FinRL donemi)", fr["buy_hold"]), ("FinRL PPO", fr["ppo"]), ("FinRL A2C", fr["a2c"]),
+             ("Al-ve-tut (qlib donemi)", {y: ql[y]["al_ve_tut"] for y in ("2025", "2026")}),
+             ("qlib LightGBM ilk 5", {y: ql[y]["qlib_lgbm_top5"] for y in ("2025", "2026")})]
+    for n_, d_ in rows_:
+        L.append(f"| {n_} | {d_['2025']['total_pct']} | {d_['2025']['sharpe']} | {d_['2026']['total_pct']} | {d_['2026']['sharpe']} |")
+    L += ["", f"qlib ortalama IC: {ql['ic_ort']} (sifira yakin: model hisseleri ayirt edemedi).",
+          "Sonuc: hicbiri iki yilda tutarli bicimde al-ve-tut'u gecemedi. FinRL egitimi kisa (60 bin adim, tek tohum); qlib 10 hisselik kucuk evrende zayif bir test. Kodlar: repos_tests/", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))

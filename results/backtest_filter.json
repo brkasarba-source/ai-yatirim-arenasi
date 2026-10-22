@@ -1,0 +1,410 @@
+{
+ "Buy & Hold (referans) | filtresiz": {
+  "2018-2024": {
+   "total_pct": 535.3,
+   "sharpe": 1.16,
+   "maxdd": -34.2
+  },
+  "2025": {
+   "total_pct": 26.5,
+   "sharpe": 1.07,
+   "maxdd": -24.3
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 17.5,
+   "sharpe": 1.37,
+   "maxdd": -10.1
+  }
+ },
+ "Buy & Hold (referans) | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 374.2,
+   "sharpe": 1.31,
+   "maxdd": -22.3
+  },
+  "2025": {
+   "total_pct": 13.8,
+   "sharpe": 0.9,
+   "maxdd": -16.8
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 13.8,
+   "sharpe": 1.18,
+   "maxdd": -8.2
+  }
+ },
+ "Buy & Hold (referans) | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 224.2,
+   "sharpe": 1.0,
+   "maxdd": -28.9
+  },
+  "2025": {
+   "total_pct": 8.1,
+   "sharpe": 0.52,
+   "maxdd": -24.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 13.7,
+   "sharpe": 1.13,
+   "maxdd": -10.0
+  }
+ },
+ "SMA 20/100 Kesişim | filtresiz": {
+  "2018-2024": {
+   "total_pct": 259.9,
+   "sharpe": 1.14,
+   "maxdd": -25.5
+  },
+  "2025": {
+   "total_pct": 10.0,
+   "sharpe": 0.77,
+   "maxdd": -14.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 4.9,
+   "sharpe": 0.61,
+   "maxdd": -8.4
+  }
+ },
+ "SMA 20/100 Kesişim | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 248.0,
+   "sharpe": 1.23,
+   "maxdd": -20.2
+  },
+  "2025": {
+   "total_pct": 11.4,
+   "sharpe": 0.88,
+   "maxdd": -13.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 5.1,
+   "sharpe": 0.63,
+   "maxdd": -8.4
+  }
+ },
+ "SMA 20/100 Kesişim | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 169.4,
+   "sharpe": 1.0,
+   "maxdd": -21.2
+  },
+  "2025": {
+   "total_pct": 10.8,
+   "sharpe": 0.83,
+   "maxdd": -14.3
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 5.0,
+   "sharpe": 0.61,
+   "maxdd": -8.4
+  }
+ },
+ "RSI Ortalamaya Dönüş | filtresiz": {
+  "2018-2024": {
+   "total_pct": 73.9,
+   "sharpe": 0.59,
+   "maxdd": -22.9
+  },
+  "2025": {
+   "total_pct": 5.3,
+   "sharpe": 0.41,
+   "maxdd": -13.3
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 9.2,
+   "sharpe": 1.51,
+   "maxdd": -5.2
+  }
+ },
+ "RSI Ortalamaya Dönüş | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 48.3,
+   "sharpe": 0.78,
+   "maxdd": -15.4
+  },
+  "2025": {
+   "total_pct": -1.8,
+   "sharpe": -0.23,
+   "maxdd": -11.0
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 6.4,
+   "sharpe": 1.34,
+   "maxdd": -2.9
+  }
+ },
+ "RSI Ortalamaya Dönüş | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 20.0,
+   "sharpe": 0.37,
+   "maxdd": -22.8
+  },
+  "2025": {
+   "total_pct": -6.0,
+   "sharpe": -0.66,
+   "maxdd": -14.8
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 6.0,
+   "sharpe": 1.15,
+   "maxdd": -4.9
+  }
+ },
+ "Bollinger Dönüş | filtresiz": {
+  "2018-2024": {
+   "total_pct": 51.5,
+   "sharpe": 0.48,
+   "maxdd": -24.1
+  },
+  "2025": {
+   "total_pct": 9.9,
+   "sharpe": 0.75,
+   "maxdd": -7.8
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 10.2,
+   "sharpe": 1.6,
+   "maxdd": -3.9
+  }
+ },
+ "Bollinger Dönüş | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 34.4,
+   "sharpe": 0.66,
+   "maxdd": -14.9
+  },
+  "2025": {
+   "total_pct": -0.7,
+   "sharpe": -0.1,
+   "maxdd": -7.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 9.0,
+   "sharpe": 1.71,
+   "maxdd": -3.9
+  }
+ },
+ "Bollinger Dönüş | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 10.2,
+   "sharpe": 0.23,
+   "maxdd": -19.0
+  },
+  "2025": {
+   "total_pct": 0.3,
+   "sharpe": 0.08,
+   "maxdd": -9.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 7.1,
+   "sharpe": 1.27,
+   "maxdd": -4.1
+  }
+ },
+ "MACD Trend | filtresiz": {
+  "2018-2024": {
+   "total_pct": 164.2,
+   "sharpe": 1.06,
+   "maxdd": -23.6
+  },
+  "2025": {
+   "total_pct": -1.7,
+   "sharpe": -0.07,
+   "maxdd": -16.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 8.5,
+   "sharpe": 1.24,
+   "maxdd": -6.9
+  }
+ },
+ "MACD Trend | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 129.8,
+   "sharpe": 1.17,
+   "maxdd": -13.4
+  },
+  "2025": {
+   "total_pct": -1.4,
+   "sharpe": -0.14,
+   "maxdd": -6.8
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 5.8,
+   "sharpe": 0.91,
+   "maxdd": -6.7
+  }
+ },
+ "MACD Trend | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 111.6,
+   "sharpe": 1.03,
+   "maxdd": -15.6
+  },
+  "2025": {
+   "total_pct": -5.1,
+   "sharpe": -0.43,
+   "maxdd": -13.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 8.1,
+   "sharpe": 1.19,
+   "maxdd": -7.3
+  }
+ },
+ "6 Ay Momentum | filtresiz": {
+  "2018-2024": {
+   "total_pct": 325.2,
+   "sharpe": 1.25,
+   "maxdd": -27.8
+  },
+  "2025": {
+   "total_pct": 4.5,
+   "sharpe": 0.37,
+   "maxdd": -17.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 4.5,
+   "sharpe": 0.58,
+   "maxdd": -7.3
+  }
+ },
+ "6 Ay Momentum | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 266.2,
+   "sharpe": 1.26,
+   "maxdd": -20.2
+  },
+  "2025": {
+   "total_pct": 2.1,
+   "sharpe": 0.22,
+   "maxdd": -16.1
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 4.7,
+   "sharpe": 0.6,
+   "maxdd": -7.3
+  }
+ },
+ "6 Ay Momentum | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 164.5,
+   "sharpe": 0.97,
+   "maxdd": -27.4
+  },
+  "2025": {
+   "total_pct": 0.0,
+   "sharpe": 0.07,
+   "maxdd": -18.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 4.0,
+   "sharpe": 0.52,
+   "maxdd": -7.3
+  }
+ },
+ "ML: Lojistik (walk-forward) | filtresiz": {
+  "2018-2024": {
+   "total_pct": 227.0,
+   "sharpe": 1.0,
+   "maxdd": -31.2
+  },
+  "2025": {
+   "total_pct": 11.8,
+   "sharpe": 0.64,
+   "maxdd": -22.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 8.7,
+   "sharpe": 0.93,
+   "maxdd": -8.7
+  }
+ },
+ "ML: Lojistik (walk-forward) | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 167.1,
+   "sharpe": 1.09,
+   "maxdd": -20.0
+  },
+  "2025": {
+   "total_pct": 7.1,
+   "sharpe": 0.58,
+   "maxdd": -14.4
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 6.2,
+   "sharpe": 0.71,
+   "maxdd": -6.8
+  }
+ },
+ "ML: Lojistik (walk-forward) | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 134.7,
+   "sharpe": 0.95,
+   "maxdd": -24.0
+  },
+  "2025": {
+   "total_pct": -0.4,
+   "sharpe": 0.05,
+   "maxdd": -21.9
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 6.0,
+   "sharpe": 0.68,
+   "maxdd": -8.6
+  }
+ },
+ "ML: Gradient Boosting (walk-forward) | filtresiz": {
+  "2018-2024": {
+   "total_pct": 52.6,
+   "sharpe": 0.44,
+   "maxdd": -34.2
+  },
+  "2025": {
+   "total_pct": 9.3,
+   "sharpe": 0.55,
+   "maxdd": -22.6
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 6.5,
+   "sharpe": 0.77,
+   "maxdd": -6.3
+  }
+ },
+ "ML: Gradient Boosting (walk-forward) | A: SPY>SMA200": {
+  "2018-2024": {
+   "total_pct": 35.3,
+   "sharpe": 0.44,
+   "maxdd": -21.4
+  },
+  "2025": {
+   "total_pct": 1.5,
+   "sharpe": 0.18,
+   "maxdd": -15.3
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 4.6,
+   "sharpe": 0.6,
+   "maxdd": -6.3
+  }
+ },
+ "ML: Gradient Boosting (walk-forward) | B: dusus<%8": {
+  "2018-2024": {
+   "total_pct": 24.6,
+   "sharpe": 0.33,
+   "maxdd": -23.9
+  },
+  "2025": {
+   "total_pct": -4.1,
+   "sharpe": -0.23,
+   "maxdd": -22.7
+  },
+  "2026 (bugune kadar)": {
+   "total_pct": 3.9,
+   "sharpe": 0.5,
+   "maxdd": -6.9
+  }
+ }
+}
