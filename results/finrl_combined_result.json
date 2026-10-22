@@ -1,0 +1,64 @@
+{
+ "adimlar": 100000,
+ "hisse_sayisi": 30,
+ "buy_hold": {
+  "2025": {
+   "tum_evren": {
+    "total_pct": 2.1,
+    "sharpe": 0.2,
+    "maxdd": -16.8
+   },
+   "sadece_abd": {
+    "total_pct": 24.5,
+    "sharpe": 1.01,
+    "maxdd": -24.5
+   },
+   "sadece_bist": {
+    "total_pct": -9.1,
+    "sharpe": -0.22,
+    "maxdd": -23.3
+   }
+  },
+  "2026": {
+   "tum_evren": {
+    "total_pct": 0.4,
+    "sharpe": 0.12,
+    "maxdd": -14.5
+   },
+   "sadece_abd": {
+    "total_pct": 15.5,
+    "sharpe": 1.27,
+    "maxdd": -9.5
+   },
+   "sadece_bist": {
+    "total_pct": -7.1,
+    "sharpe": -0.2,
+    "maxdd": -23.5
+   }
+  }
+ },
+ "ppo": {
+  "2025": {
+   "total_pct": 9.7,
+   "sharpe": 0.48,
+   "maxdd": -24.6
+  },
+  "2026": {
+   "total_pct": 10.4,
+   "sharpe": 0.56,
+   "maxdd": -18.9
+  }
+ },
+ "a2c": {
+  "2025": {
+   "total_pct": 24.7,
+   "sharpe": 1.04,
+   "maxdd": -24.0
+  },
+  "2026": {
+   "total_pct": 8.0,
+   "sharpe": 0.64,
+   "maxdd": -12.3
+  }
+ }
+}

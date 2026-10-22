@@ -1,0 +1,49 @@
+{
+ "ic_ort": -0.006,
+ "topk": 10,
+ "ortalama_agirlik_bist_pct": 62.3,
+ "2025": {
+  "qlib_lgbm_top10": {
+   "total_pct": -48.6,
+   "sharpe": -2.97,
+   "maxdd": -48.9
+  },
+  "al_ve_tut_tum_evren": {
+   "total_pct": 2.3,
+   "sharpe": 0.21,
+   "maxdd": -16.6
+  },
+  "al_ve_tut_sadece_abd": {
+   "total_pct": 26.3,
+   "sharpe": 1.04,
+   "maxdd": -24.3
+  },
+  "al_ve_tut_sadece_bist": {
+   "total_pct": -9.8,
+   "sharpe": -0.24,
+   "maxdd": -23.5
+  }
+ },
+ "2026": {
+  "qlib_lgbm_top10": {
+   "total_pct": -29.2,
+   "sharpe": -2.14,
+   "maxdd": -34.5
+  },
+  "al_ve_tut_tum_evren": {
+   "total_pct": 2.0,
+   "sharpe": 0.22,
+   "maxdd": -14.7
+  },
+  "al_ve_tut_sadece_abd": {
+   "total_pct": 17.3,
+   "sharpe": 1.33,
+   "maxdd": -10.1
+  },
+  "al_ve_tut_sadece_bist": {
+   "total_pct": -6.0,
+   "sharpe": -0.14,
+   "maxdd": -24.6
+  }
+ }
+}

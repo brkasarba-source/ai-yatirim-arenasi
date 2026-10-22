@@ -52,5 +52,18 @@ if fr and ql:
         L.append(f"| {n_} | {d_['2025']['total_pct']} | {d_['2025']['sharpe']} | {d_['2026']['total_pct']} | {d_['2026']['sharpe']} |")
     L += ["", f"qlib ortalama IC: {ql['ic_ort']} (sifira yakin: model hisseleri ayirt edemedi).",
           "Sonuc: hicbiri iki yilda tutarli bicimde al-ve-tut'u gecemedi. FinRL egitimi kisa (60 bin adim, tek tohum); qlib 10 hisselik kucuk evrende zayif bir test. Kodlar: repos_tests/", ""]
+
+fc, qc = _load("results/finrl_combined_result.json"), _load("results/qlib_combined_result.json")
+if fc and qc:
+    L += ["## Birlesik evren: 10 ABD + 20 BIST (hepsi USD)", "",
+          "| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |", "|---|---:|---:|---:|---:|"]
+    def _r(n_, a_, b_):
+        L.append(f"| {n_} | {a_['total_pct']} | {a_['sharpe']} | {b_['total_pct']} | {b_['sharpe']} |")
+    for k_, n_ in (("tum_evren", "Al-ve-tut, tum evren"), ("sadece_abd", "Al-ve-tut, sadece ABD"), ("sadece_bist", "Al-ve-tut, sadece BIST (USD)")):
+        _r(n_, fc["buy_hold"]["2025"][k_], fc["buy_hold"]["2026"][k_])
+    _r("FinRL PPO", fc["ppo"]["2025"], fc["ppo"]["2026"])
+    _r("FinRL A2C", fc["a2c"]["2025"], fc["a2c"]["2026"])
+    _r("qlib LightGBM ilk 10", qc["2025"]["qlib_lgbm_top10"], qc["2026"]["qlib_lgbm_top10"])
+    L += ["", f"qlib IC: {qc['ic_ort']}, ortalama BIST agirligi: %{qc['ortalama_agirlik_bist_pct']}. FinRL tek tohum, 100 bin adim. Yatirim tavsiyesi degildir.", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))

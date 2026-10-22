@@ -29,3 +29,16 @@ Egitim 2016-2024 (qlib: 2016-2022), ajanlarin hic gormedigi donemlerde test. Ayn
 
 qlib ortalama IC: 0.01 (sifira yakin: model hisseleri ayirt edemedi).
 Sonuc: hicbiri iki yilda tutarli bicimde al-ve-tut'u gecemedi. FinRL egitimi kisa (60 bin adim, tek tohum); qlib 10 hisselik kucuk evrende zayif bir test. Kodlar: repos_tests/
+
+## Birlesik evren: 10 ABD + 20 BIST (hepsi USD)
+
+| Model | 2025 getiri % | 2025 Sharpe | 2026 getiri % | 2026 Sharpe |
+|---|---:|---:|---:|---:|
+| Al-ve-tut, tum evren | 2.1 | 0.2 | 0.4 | 0.12 |
+| Al-ve-tut, sadece ABD | 24.5 | 1.01 | 15.5 | 1.27 |
+| Al-ve-tut, sadece BIST (USD) | -9.1 | -0.22 | -7.1 | -0.2 |
+| FinRL PPO | 9.7 | 0.48 | 10.4 | 0.56 |
+| FinRL A2C | 24.7 | 1.04 | 8.0 | 0.64 |
+| qlib LightGBM ilk 10 | -48.6 | -2.97 | -29.2 | -2.14 |
+
+qlib IC: -0.006, ortalama BIST agirligi: %62.3. FinRL tek tohum, 100 bin adim. Yatirim tavsiyesi degildir.
