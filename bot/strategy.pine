@@ -1,0 +1,26 @@
+//@version=5
+// SMA 20/100 trend filter, long-only, daily bars. Arena rule set: signal on close, executes next bar open.
+// Arena (2024+, cost 0.15%): Sharpe 1.29, max drawdown -15% vs buy&hold -24%. It did NOT beat buy&hold on return.
+strategy("Arena SMA 20/100 (paper)", overlay=true, initial_capital=100000,
+         default_qty_type=strategy.percent_of_equity, default_qty_value=10,
+         commission_type=strategy.commission.percent, commission_value=0.10,
+         slippage=3, process_orders_on_close=false)
+
+fastLen = input.int(20, "Fast SMA", minval=2)
+slowLen = input.int(100, "Slow SMA", minval=5)
+secret  = input.string("CHANGE_ME", "Webhook secret (must match receiver)")
+
+fast = ta.sma(close, fastLen)
+slow = ta.sma(close, slowLen)
+plot(fast, "Fast", color=color.new(color.teal, 0))
+plot(slow, "Slow", color=color.new(color.orange, 0))
+
+buyMsg  = '{"secret":"' + secret + '","symbol":"' + syminfo.ticker + '","action":"buy","price":' + str.tostring(close) + '}'
+sellMsg = '{"secret":"' + secret + '","symbol":"' + syminfo.ticker + '","action":"sell","price":' + str.tostring(close) + '}'
+
+longOk = fast > slow
+if barstate.isconfirmed
+    if longOk and strategy.position_size == 0
+        strategy.entry("Long", strategy.long, alert_message=buyMsg)
+    if not longOk and strategy.position_size > 0
+        strategy.close("Long", alert_message=sellMsg)
