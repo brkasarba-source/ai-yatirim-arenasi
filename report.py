@@ -20,6 +20,22 @@ else:
     sig_date = "-"
 
 L = ["# Durum", ""]
+
+import os as _os
+if _os.path.exists("league.json"):
+    lg = json.load(open("league.json", encoding="utf-8"))
+    L += ["## Bot ligi: her bota 1000 $ sanal bütçe", "",
+          f"Başlangıç {lg['start_date']} | son veri {lg['last_date']} | işlem günü {lg['days']}. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.", ""]
+    if lg["days"] == 0:
+        L += ["İlk işlem günü bekleniyor, tüm botlar nakitte.", ""]
+    L += ["| Bot | Değer $ | Getiri % | Maks. düşüş % | Pozisyon | İşlem |", "|---|---:|---:|---:|---:|---:|"]
+    for r in sorted(lg["board"], key=lambda x: -x["equity"]):
+        L.append(f"| {r['bot']} | {r['equity']:.2f} | {r['return_pct']:.2f} | {r['maxdd_pct']:.2f} | {r['positions']} | {r['trades']} |")
+    if lg["recent_trades"]:
+        L += ["", "Son işlemler:", "", "| Tarih | Bot | İşlem | Hisse | Fiyat $ | Tutar $ | Neden |", "|---|---|---|---|---:|---:|---|"]
+        for x in lg["recent_trades"][:12]:
+            L.append(f"| {x['date']} | {x['bot']} | {x['side']} | {x['tic']} | {x['price']} | {x['value']} | {x['reason']} |")
+    L += [""]
 if t["days"] == 0:
     L += [f"Takip {t['forward_start']} tarihinde basladi. Ilk islem gunu verisi bekleniyor.", ""]
 else:
@@ -91,5 +107,15 @@ if fh:
         top_ = ", ".join(f"{t} {p}" for t, p in v_["en_cok_tutulan"][:4])
         L.append(f"| {k_.upper().replace('_', ' ')} | {min(a_)}-{max(a_)} | {min(b_)}-{max(b_)} | {top_} |")
     L += ["", "Evrende BIST payi %67; ajanlar BIST'ten kacip buyuk ABD hisselerine yogunlasti. Yatirim tavsiyesi degildir.", ""]
+
+ov = _load("results/own_bot_validation.json")
+if ov:
+    L += ["## Bizim bot (Trend EW): uzun geçmiş doğrulaması, 12 ETF, 2005-bugün", "",
+          "Kurallar test öncesi sabitlendi. Yıllık getiri % / Sharpe / maks. düşüş %.", "",
+          "| Dönem | Trend EW | Eşit ağırlık al-ve-tut | SPY al-ve-tut |", "|---|---|---|---|"]
+    for k_, v_ in ov.items():
+        f_ = lambda m_: f"{m_['cagr']} / {m_['sharpe']} / {m_['maxdd']}"
+        L.append(f"| {k_} | {f_(v_['trend_ew'])} | {f_(v_['esit_agirlik_al_tut'])} | {f_(v_['spy_al_tut'])} |")
+    L += ["", "Sonuç: düşüşleri çok iyi koruyor (2008'de -%7, SPY -%44) ama uzun vadede getiri geride (yıllık %4,2'ye karşı SPY %10,8). Yatırım tavsiyesi değildir.", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))

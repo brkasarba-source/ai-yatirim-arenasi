@@ -1,0 +1,168 @@
+{
+ "start_date": "2026-10-22",
+ "last_date": "2026-10-22",
+ "budget": 1000.0,
+ "bots": {
+  "Al-ve-tut (referans)": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 1.0,
+    "QQQ": 1.0,
+    "AAPL": 1.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
+    "AMZN": 1.0,
+    "GOOGL": 1.0,
+    "TSLA": 1.0,
+    "JPM": 1.0,
+    "XOM": 1.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "SMA 20/100": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 1.0,
+    "QQQ": 1.0,
+    "AAPL": 1.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
+    "AMZN": 1.0,
+    "GOOGL": 0.0,
+    "TSLA": 1.0,
+    "JPM": 0.0,
+    "XOM": 1.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "Bollinger": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 0.0,
+    "QQQ": 1.0,
+    "AAPL": 0.0,
+    "MSFT": 0.0,
+    "NVDA": 1.0,
+    "AMZN": 0.0,
+    "GOOGL": 1.0,
+    "TSLA": 0.0,
+    "JPM": 0.0,
+    "XOM": 0.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "RSI": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 0.0,
+    "QQQ": 1.0,
+    "AAPL": 0.0,
+    "MSFT": 0.0,
+    "NVDA": 0.0,
+    "AMZN": 0.0,
+    "GOOGL": 0.0,
+    "TSLA": 0.0,
+    "JPM": 0.0,
+    "XOM": 0.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "Momentum 6 ay": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 1.0,
+    "QQQ": 1.0,
+    "AAPL": 1.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
+    "AMZN": 0.0,
+    "GOOGL": 0.0,
+    "TSLA": 1.0,
+    "JPM": 1.0,
+    "XOM": 1.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "Lojistik ML": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 1.0,
+    "QQQ": 1.0,
+    "AAPL": 1.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
+    "AMZN": 1.0,
+    "GOOGL": 1.0,
+    "TSLA": 0.0,
+    "JPM": 0.0,
+    "XOM": 1.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  },
+  "Trend EW (bizim bot)": {
+   "cash": 1000.0,
+   "pos": {},
+   "pending": {
+    "SPY": 1.0,
+    "QQQ": 1.0,
+    "AAPL": 1.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
+    "AMZN": 0.0,
+    "GOOGL": 0.0,
+    "TSLA": 0.0,
+    "JPM": 1.0,
+    "XOM": 1.0
+   },
+   "trades": [],
+   "equity": [
+    [
+     "2026-10-22",
+     1000.0
+    ]
+   ]
+  }
+ }
+}

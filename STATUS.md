@@ -1,5 +1,21 @@
 # Durum
 
+## Bot ligi: her bota 1000 $ sanal bütçe
+
+Başlangıç 2026-10-22 | son veri 2026-10-22 | işlem günü 0. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.
+
+İlk işlem günü bekleniyor, tüm botlar nakitte.
+
+| Bot | Değer $ | Getiri % | Maks. düşüş % | Pozisyon | İşlem |
+|---|---:|---:|---:|---:|---:|
+| Al-ve-tut (referans) | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| SMA 20/100 | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| Bollinger | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| RSI | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| Momentum 6 ay | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| Lojistik ML | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+| Trend EW (bizim bot) | 1000.00 | 0.00 | 0.00 | 0 | 0 |
+
 Takip 2026-10-22 tarihinde basladi. Ilk islem gunu verisi bekleniyor.
 
 | Strateji | Getiri % | Maks. dusus % | Sepet pozisyonu (son sinyal) |
@@ -72,3 +88,17 @@ Referans (al-ve-tut %): tum evren 2025 +2.1, 2026 +0.4; sadece ABD 2025 +24.5, 2
 | A2C 2026 | 95.7-98.4 | 0.9-3.5 | MSFT 21.9, QQQ 19.8, GOOGL 13.3, JPM 9.0 |
 
 Evrende BIST payi %67; ajanlar BIST'ten kacip buyuk ABD hisselerine yogunlasti. Yatirim tavsiyesi degildir.
+
+## Bizim bot (Trend EW): uzun geçmiş doğrulaması, 12 ETF, 2005-bugün
+
+Kurallar test öncesi sabitlendi. Yıllık getiri % / Sharpe / maks. düşüş %.
+
+| Dönem | Trend EW | Eşit ağırlık al-ve-tut | SPY al-ve-tut |
+|---|---|---|---|
+| 2005-bugun | 4.2 / 0.58 / -11.2 | 9.4 / 0.69 / -41.1 | 10.8 / 0.64 / -55.2 |
+| 2008 krizi | -3.8 / -0.94 / -7.2 | -25.5 / -0.74 / -40.0 | -37.1 / -0.92 / -51.9 |
+| 2020 cokusu | -5.3 / -0.68 / -9.9 | -5.2 / 0.01 / -27.5 | -6.4 / 0.08 / -33.7 |
+| 2022 dususu | -5.3 / -1.08 / -6.1 | -9.6 / -0.52 / -17.5 | -18.2 / -0.71 / -24.5 |
+| 2023-bugun | 6.3 / 0.88 / -6.9 | 15.0 / 1.37 / -11.2 | 21.5 / 1.38 / -18.8 |
+
+Sonuç: düşüşleri çok iyi koruyor (2008'de -%7, SPY -%44) ama uzun vadede getiri geride (yıllık %4,2'ye karşı SPY %10,8). Yatırım tavsiyesi değildir.

@@ -1,0 +1,102 @@
+{
+ "2005-bugun": {
+  "trend_ew": {
+   "cagr": 4.2,
+   "sharpe": 0.58,
+   "maxdd": -11.2,
+   "total": 144.0
+  },
+  "esit_agirlik_al_tut": {
+   "cagr": 9.4,
+   "sharpe": 0.69,
+   "maxdd": -41.1,
+   "total": 614.0
+  },
+  "spy_al_tut": {
+   "cagr": 10.8,
+   "sharpe": 0.64,
+   "maxdd": -55.2,
+   "total": 838.0
+  }
+ },
+ "2008 krizi": {
+  "trend_ew": {
+   "cagr": -3.8,
+   "sharpe": -0.94,
+   "maxdd": -7.2,
+   "total": -5.0
+  },
+  "esit_agirlik_al_tut": {
+   "cagr": -25.5,
+   "sharpe": -0.74,
+   "maxdd": -40.0,
+   "total": -31.0
+  },
+  "spy_al_tut": {
+   "cagr": -37.1,
+   "sharpe": -0.92,
+   "maxdd": -51.9,
+   "total": -44.0
+  }
+ },
+ "2020 cokusu": {
+  "trend_ew": {
+   "cagr": -5.3,
+   "sharpe": -0.68,
+   "maxdd": -9.9,
+   "total": -3.0
+  },
+  "esit_agirlik_al_tut": {
+   "cagr": -5.2,
+   "sharpe": 0.01,
+   "maxdd": -27.5,
+   "total": -3.0
+  },
+  "spy_al_tut": {
+   "cagr": -6.4,
+   "sharpe": 0.08,
+   "maxdd": -33.7,
+   "total": -3.0
+  }
+ },
+ "2022 dususu": {
+  "trend_ew": {
+   "cagr": -5.3,
+   "sharpe": -1.08,
+   "maxdd": -6.1,
+   "total": -5.0
+  },
+  "esit_agirlik_al_tut": {
+   "cagr": -9.6,
+   "sharpe": -0.52,
+   "maxdd": -17.5,
+   "total": -10.0
+  },
+  "spy_al_tut": {
+   "cagr": -18.2,
+   "sharpe": -0.71,
+   "maxdd": -24.5,
+   "total": -18.0
+  }
+ },
+ "2023-bugun": {
+  "trend_ew": {
+   "cagr": 6.3,
+   "sharpe": 0.88,
+   "maxdd": -6.9,
+   "total": 26.0
+  },
+  "esit_agirlik_al_tut": {
+   "cagr": 15.0,
+   "sharpe": 1.37,
+   "maxdd": -11.2,
+   "total": 70.0
+  },
+  "spy_al_tut": {
+   "cagr": 21.5,
+   "sharpe": 1.38,
+   "maxdd": -18.8,
+   "total": 109.0
+  }
+ }
+}
