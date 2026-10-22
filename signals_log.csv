@@ -78,3 +78,83 @@
 2026-10-21,ML: Gradient Boosting (walk-forward),TSLA,0.0
 2026-10-21,ML: Gradient Boosting (walk-forward),JPM,0.0
 2026-10-21,ML: Gradient Boosting (walk-forward),XOM,1.0
+2026-10-22,Buy & Hold (referans),SPY,1.0
+2026-10-22,Buy & Hold (referans),QQQ,1.0
+2026-10-22,Buy & Hold (referans),AAPL,1.0
+2026-10-22,Buy & Hold (referans),MSFT,1.0
+2026-10-22,Buy & Hold (referans),NVDA,1.0
+2026-10-22,Buy & Hold (referans),AMZN,1.0
+2026-10-22,Buy & Hold (referans),GOOGL,1.0
+2026-10-22,Buy & Hold (referans),TSLA,1.0
+2026-10-22,Buy & Hold (referans),JPM,1.0
+2026-10-22,Buy & Hold (referans),XOM,1.0
+2026-10-22,SMA 20/100 Kesişim,SPY,1.0
+2026-10-22,SMA 20/100 Kesişim,QQQ,1.0
+2026-10-22,SMA 20/100 Kesişim,AAPL,1.0
+2026-10-22,SMA 20/100 Kesişim,MSFT,1.0
+2026-10-22,SMA 20/100 Kesişim,NVDA,1.0
+2026-10-22,SMA 20/100 Kesişim,AMZN,1.0
+2026-10-22,SMA 20/100 Kesişim,GOOGL,0.0
+2026-10-22,SMA 20/100 Kesişim,TSLA,1.0
+2026-10-22,SMA 20/100 Kesişim,JPM,0.0
+2026-10-22,SMA 20/100 Kesişim,XOM,1.0
+2026-10-22,RSI Ortalamaya Dönüş,SPY,0.0
+2026-10-22,RSI Ortalamaya Dönüş,QQQ,1.0
+2026-10-22,RSI Ortalamaya Dönüş,AAPL,0.0
+2026-10-22,RSI Ortalamaya Dönüş,MSFT,0.0
+2026-10-22,RSI Ortalamaya Dönüş,NVDA,0.0
+2026-10-22,RSI Ortalamaya Dönüş,AMZN,0.0
+2026-10-22,RSI Ortalamaya Dönüş,GOOGL,0.0
+2026-10-22,RSI Ortalamaya Dönüş,TSLA,0.0
+2026-10-22,RSI Ortalamaya Dönüş,JPM,0.0
+2026-10-22,RSI Ortalamaya Dönüş,XOM,0.0
+2026-10-22,Bollinger Dönüş,SPY,0.0
+2026-10-22,Bollinger Dönüş,QQQ,1.0
+2026-10-22,Bollinger Dönüş,AAPL,0.0
+2026-10-22,Bollinger Dönüş,MSFT,0.0
+2026-10-22,Bollinger Dönüş,NVDA,1.0
+2026-10-22,Bollinger Dönüş,AMZN,0.0
+2026-10-22,Bollinger Dönüş,GOOGL,1.0
+2026-10-22,Bollinger Dönüş,TSLA,0.0
+2026-10-22,Bollinger Dönüş,JPM,0.0
+2026-10-22,Bollinger Dönüş,XOM,0.0
+2026-10-22,MACD Trend,SPY,0.0
+2026-10-22,MACD Trend,QQQ,0.0
+2026-10-22,MACD Trend,AAPL,1.0
+2026-10-22,MACD Trend,MSFT,0.0
+2026-10-22,MACD Trend,NVDA,0.0
+2026-10-22,MACD Trend,AMZN,1.0
+2026-10-22,MACD Trend,GOOGL,0.0
+2026-10-22,MACD Trend,TSLA,1.0
+2026-10-22,MACD Trend,JPM,1.0
+2026-10-22,MACD Trend,XOM,1.0
+2026-10-22,6 Ay Momentum,SPY,1.0
+2026-10-22,6 Ay Momentum,QQQ,1.0
+2026-10-22,6 Ay Momentum,AAPL,1.0
+2026-10-22,6 Ay Momentum,MSFT,1.0
+2026-10-22,6 Ay Momentum,NVDA,1.0
+2026-10-22,6 Ay Momentum,AMZN,0.0
+2026-10-22,6 Ay Momentum,GOOGL,0.0
+2026-10-22,6 Ay Momentum,TSLA,1.0
+2026-10-22,6 Ay Momentum,JPM,1.0
+2026-10-22,6 Ay Momentum,XOM,1.0
+2026-10-22,ML: Lojistik (walk-forward),SPY,1.0
+2026-10-22,ML: Lojistik (walk-forward),QQQ,1.0
+2026-10-22,ML: Lojistik (walk-forward),AAPL,1.0
+2026-10-22,ML: Lojistik (walk-forward),MSFT,1.0
+2026-10-22,ML: Lojistik (walk-forward),NVDA,1.0
+2026-10-22,ML: Lojistik (walk-forward),AMZN,1.0
+2026-10-22,ML: Lojistik (walk-forward),GOOGL,1.0
+2026-10-22,ML: Lojistik (walk-forward),TSLA,0.0
+2026-10-22,ML: Lojistik (walk-forward),JPM,0.0
+2026-10-22,ML: Lojistik (walk-forward),XOM,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),SPY,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),QQQ,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),AAPL,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),MSFT,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),NVDA,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),AMZN,1.0
+2026-10-22,ML: Gradient Boosting (walk-forward),GOOGL,0.0
+2026-10-22,ML: Gradient Boosting (walk-forward),TSLA,0.0
+2026-10-22,ML: Gradient Boosting (walk-forward),JPM,0.0
+2026-10-22,ML: Gradient Boosting (walk-forward),XOM,1.0

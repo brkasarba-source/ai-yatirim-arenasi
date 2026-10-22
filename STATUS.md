@@ -16,20 +16,22 @@ Başlangıç 2026-10-22 | son veri 2026-10-22 | işlem günü 0. Karar kapanış
 | Lojistik ML | 1000.00 | 0.00 | 0.00 | 0 | 0 |
 | Trend EW (bizim bot) | 1000.00 | 0.00 | 0.00 | 0 | 0 |
 
-Takip 2026-10-22 tarihinde basladi. Ilk islem gunu verisi bekleniyor.
+**Son veri:** 2026-10-22 | **Takip gunu:** 1 | **Baslangic:** 2026-10-22
+
+Al-ve-tut referansi: %-1.88. Referansi gecen: RSI Ortalamaya Dönüş, MACD Trend, Bollinger Dönüş, 6 Ay Momentum, SMA 20/100 Kesişim, ML: Gradient Boosting (walk-forward), ML: Lojistik (walk-forward).
 
 | Strateji | Getiri % | Maks. dusus % | Sepet pozisyonu (son sinyal) |
 |---|---:|---:|---:|
-| Buy & Hold (referans) | 0.00 | 0.00 | 10/10 hisse |
-| SMA 20/100 Kesişim | 0.00 | 0.00 | 8/10 hisse |
-| RSI Ortalamaya Dönüş | 0.00 | 0.00 | 0/10 hisse |
-| Bollinger Dönüş | 0.00 | 0.00 | 3/10 hisse |
-| MACD Trend | 0.00 | 0.00 | 4/10 hisse |
-| 6 Ay Momentum | 0.00 | 0.00 | 8/10 hisse |
-| ML: Lojistik (walk-forward) | 0.00 | 0.00 | 9/10 hisse |
-| ML: Gradient Boosting (walk-forward) | 0.00 | 0.00 | 8/10 hisse |
+| RSI Ortalamaya Dönüş | 0.00 | 0.00 | 1/10 hisse |
+| MACD Trend | -0.76 | 0.00 | 5/10 hisse |
+| Bollinger Dönüş | -0.92 | 0.00 | 3/10 hisse |
+| 6 Ay Momentum | -1.51 | 0.00 | 8/10 hisse |
+| SMA 20/100 Kesişim | -1.56 | 0.00 | 8/10 hisse |
+| ML: Gradient Boosting (walk-forward) | -1.69 | 0.00 | 7/10 hisse |
+| ML: Lojistik (walk-forward) | -1.82 | 0.00 | 8/10 hisse |
+| Buy & Hold (referans) | -1.88 | 0.00 | 10/10 hisse |
 
-Son sinyal tarihi: 2026-10-21. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
+Son sinyal tarihi: 2026-10-22. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
 
 ## Gercek repolar: FinRL ve qlib (2025 ve 2026 testi)
 
