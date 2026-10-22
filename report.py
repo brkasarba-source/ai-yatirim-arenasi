@@ -81,5 +81,15 @@ if fs:
     for k_, v_ in o_.items():
         L.append(f"| {k_.upper().replace('_', ' ')} | {', '.join(str(x) for x in v_['tohumlar'])} | {v_['ort']} | {v_['std']} | {v_['kazanan_tum_evren']}/5 | {v_['kazanan_abd']}/5 |")
     L += ["", "Referans (al-ve-tut %): tum evren 2025 +2.1, 2026 +0.4; sadece ABD 2025 +24.5, 2026 +15.5. Yatirim tavsiyesi degildir.", ""]
+
+fh = _load("results/finrl_holdings_summary.json")
+if fh:
+    L += ["## FinRL ajanlari ne tutuyor? (5 tohum ortalamasi)", "",
+          "| Ajan, yil | ABD agirligi % (tohum araligi) | BIST agirligi % | En cok tutulan hisseler |", "|---|---|---|---|"]
+    for k_, v_ in fh.items():
+        a_, b_ = v_["abd_pct"], v_["bist_pct"]
+        top_ = ", ".join(f"{t} {p}" for t, p in v_["en_cok_tutulan"][:4])
+        L.append(f"| {k_.upper().replace('_', ' ')} | {min(a_)}-{max(a_)} | {min(b_)}-{max(b_)} | {top_} |")
+    L += ["", "Evrende BIST payi %67; ajanlar BIST'ten kacip buyuk ABD hisselerine yogunlasti. Yatirim tavsiyesi degildir.", ""]
 open("STATUS.md", "w", encoding="utf-8").write("\n".join(L))
 print("\n".join(L))
