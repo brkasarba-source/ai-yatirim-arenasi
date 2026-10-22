@@ -20,7 +20,15 @@ jobs:
           path: ~/.venvs
           key: venvs-${{ hashFiles('ci/setup_envs.sh') }}
       - run: pip install -r requirements.txt
-      - run: bash ci/setup_envs.sh
+      - name: Ortam finrl
+        continue-on-error: true
+        run: bash ci/setup_envs.sh finrl
+      - name: Ortam qlib
+        continue-on-error: true
+        run: bash ci/setup_envs.sh qlib
+      - name: Ortam freqtrade
+        continue-on-error: true
+        run: bash ci/setup_envs.sh freqtrade
       - run: python tracker.py
       - name: Lig
         env:
