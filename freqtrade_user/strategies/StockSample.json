@@ -1,0 +1,31 @@
+{
+  "strategy_name": "StockSample",
+  "params": {
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 10
+    },
+    "buy": {
+      "buy_rsi": 38
+    },
+    "sell": {
+      "sell_rsi": 68
+    },
+    "roi": {
+      "0": 0.923,
+      "10703": 0.185,
+      "25748": 0.097,
+      "56470": 0
+    },
+    "stoploss": {
+      "stoploss": -0.305
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2026-10-22 12:35:26.380674+00:00"
+}

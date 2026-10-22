@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 paper_ledger.json
+freqtrade_user/data/
+freqtrade_user/backtest_results/
+freqtrade_user/logs/
+mlruns/

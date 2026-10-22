@@ -8,15 +8,28 @@ permissions:
 jobs:
   track:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+      - uses: actions/cache@v4
+        with:
+          path: ~/.venvs
+          key: venvs-${{ hashFiles('ci/setup_envs.sh') }}
       - run: pip install -r requirements.txt
+      - run: bash ci/setup_envs.sh
       - run: python tracker.py
-      - run: python league.py
+      - name: Lig
+        env:
+          FINRL_PY: /home/runner/.venvs/finrl/bin/python
+          QLIB_PY: /home/runner/.venvs/qlib/bin/python
+          FREQTRADE_PY: /home/runner/.venvs/freqtrade/bin/python
+          MLFLOW_ALLOW_FILE_STORE: "true"
+          MLFLOW_DISABLE_AGENT_HINT: "1"
+        run: python league.py
       - run: python report.py
       - name: Commit results
         run: |

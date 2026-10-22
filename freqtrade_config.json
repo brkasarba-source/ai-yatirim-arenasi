@@ -1,0 +1,56 @@
+{
+ "max_open_trades": 10,
+ "stake_currency": "USDT",
+ "stake_amount": "unlimited",
+ "tradable_balance_ratio": 1.0,
+ "fiat_display_currency": "",
+ "dry_run": true,
+ "dry_run_wallet": 1000,
+ "timeframe": "1d",
+ "trading_mode": "spot",
+ "unfilledtimeout": {
+  "entry": 10,
+  "exit": 10,
+  "unit": "minutes"
+ },
+ "entry_pricing": {
+  "price_side": "same",
+  "use_order_book": false
+ },
+ "exit_pricing": {
+  "price_side": "same",
+  "use_order_book": false
+ },
+ "exchange": {
+  "name": "kraken",
+  "key": "",
+  "secret": "",
+  "ccxt_config": {},
+  "ccxt_async_config": {},
+  "pair_whitelist": [
+   "BTC/USDT",
+   "ETH/USDT",
+   "XRP/USDT",
+   "ADA/USDT",
+   "LTC/USDT",
+   "SOL/USDT",
+   "DOT/USDT",
+   "DOGE/USDT",
+   "LINK/USDT",
+   "ATOM/USDT"
+  ],
+  "pair_blacklist": []
+ },
+ "pairlists": [
+  {
+   "method": "StaticPairList"
+  }
+ ],
+ "datadir": "freqtrade_user/data/kraken",
+ "user_data_dir": "freqtrade_user",
+ "bot_name": "league-freqtrade",
+ "initial_state": "running",
+ "internals": {
+  "process_throttle_secs": 5
+ }
+}
