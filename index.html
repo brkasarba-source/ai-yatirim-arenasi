@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Yatırım Arenası</title>
+<style>
+:root{--bg:#f6f5f1;--panel:#fff;--fg:#1c1c1a;--mute:#6d6c66;--line:#e1dfd6;--up:#1d7a46;--down:#b3392b;--own:#1c1c1a}
+@media (prefers-color-scheme:dark){:root{--bg:#141412;--panel:#1d1d1a;--fg:#ecebe5;--mute:#9a988f;--line:#33322d;--up:#4cc27e;--down:#ef7a6b;--own:#ecebe5}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1{font:600 24px/1.2 Georgia,"Times New Roman",serif;margin:8px 0 0}
+h2{font-size:16px;margin:0 0 10px}
+.sub{color:var(--mute);font-size:13px;margin:4px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:4px 12px;padding:9px 0;border-top:1px solid var(--line);align-items:baseline}
+.row:first-of-type{border-top:0}
+.name{font-weight:600}.own .name{text-decoration:underline;text-underline-offset:3px}
+.fam{grid-column:1/-1;color:var(--mute);font-size:12px;margin-top:-2px}
+.val,.ret{font-variant-numeric:tabular-nums;text-align:right}
+.up{color:var(--up)}.down{color:var(--down)}
+.bar{grid-column:1/-1;height:4px;border-radius:2px;background:var(--line);position:relative;margin-top:2px}
+.bar i{position:absolute;top:0;height:4px;border-radius:2px}
+svg{width:100%;height:auto;display:block}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--mute);margin-top:8px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.trade{padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.trade:first-of-type{border-top:0}
+.trade b{font-weight:600}.mute{color:var(--mute)}
+.note{color:var(--mute);font-size:12px}
+a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AI Yatırım Arenası</h1>
+    <p class="sub" id="sub">Yükleniyor…</p>
+  </header>
+  <section class="card"><h2>Lig: her bota 1.000 $ sanal bütçe</h2><div id="board"></div></section>
+  <section class="card"><h2>Hesap değeri ($)</h2><div id="chart"></div><div class="legend" id="legend"></div></section>
+  <section class="card"><h2>Son işlemler</h2><div id="trades"></div></section>
+  <p class="note">Hepsi sanal para, gerçek işlem yok. Karar günün kapanışında verilir, ertesi gün açılışta uygulanır, maliyet %0,15. Eğitim amaçlıdır, yatırım tavsiyesi değildir. Veri her işlem günü otomatik güncellenir. <a href="https://github.com/brkasarba-source/ai-yatirim-arenasi/blob/main/STATUS.md">Ayrıntılı rapor</a> · <a href="https://github.com/brkasarba-source/ai-yatirim-arenasi">Kod</a></p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const f2 = n => (+n).toLocaleString('tr-TR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const colors = ['#2a6f97','#d1792b','#5a9e6f','#a05195','#c4a000','#7a7a7a','#b5483a','#3b8ea5','#8a5a2b','#4b7f52','#7b61a8','#c2557b','#2f6f6b'];
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+
+function draw(lg) {
+  $('sub').textContent = `Başlangıç ${lg.start_date} · son veri ${lg.last_date} · ${lg.days} işlem günü`;
+  const board = lg.board.slice().sort((a, b) => b.equity - a.equity);
+  const span = Math.max(...board.map(b => Math.abs(b.return_pct)), 0.5);
+  $('board').replaceChildren(...board.map(b => {
+    const r = el('div', 'row' + (b.bot.includes('bizim bot') ? ' own' : ''));
+    r.append(el('span', 'name', b.bot), el('span', 'val', '$' + f2(b.equity)), el('span', 'ret ' + (b.return_pct >= 0 ? 'up' : 'down'), (b.return_pct >= 0 ? '+' : '') + f2(b.return_pct) + '%'));
+    r.append(el('span', 'fam', `${b.family} · ${b.positions} pozisyon · ${b.trades} işlem · maks. düşüş ${f2(b.maxdd_pct)}%`));
+    const bar = el('div', 'bar'), i = document.createElement('i');
+    const w = Math.abs(b.return_pct) / span * 50;
+    i.style.cssText = `width:${w}%;left:${b.return_pct >= 0 ? 50 : 50 - w}%;background:var(--${b.return_pct >= 0 ? 'up' : 'down'})`;
+    bar.append(i); r.append(bar); return r;
+  }));
+
+  const names = Object.keys(lg.curves);
+  const rows = lg.curves[names[0]].map((p, i) => ({d: p[0], v: names.map(n => (lg.curves[n][i] || lg.curves[n].at(-1))[1])}));
+  if (rows.length < 2) {
+    $('chart').replaceChildren(el('p', 'note', 'Eğri, iki işlem günü verisi olunca çizilir. İlk alım-satımlar ilk işlem gününün açılışında yapılır.'));
+  } else {
+    const W = 700, H = 280, m = {l: 48, r: 10, t: 8, b: 24};
+    const all = rows.flatMap(r => r.v), lo = Math.min(...all, 1000), hi = Math.max(...all, 1000), pad = (hi - lo) * .08 || 5;
+    const x = i => m.l + (W - m.l - m.r) * i / (rows.length - 1), y = v => H - m.b - (H - m.t - m.b) * (v - (lo - pad)) / (hi - lo + 2 * pad);
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Bot hesap değerleri">`;
+    for (let k = 0; k <= 4; k++) { const v = lo - pad + (hi - lo + 2 * pad) * k / 4; s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="var(--mute)">${Math.round(v)}</text>`; }
+    s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(1000)}" y2="${y(1000)}" stroke="var(--mute)" stroke-dasharray="4 4"/>`;
+    [0, Math.floor((rows.length - 1) / 2), rows.length - 1].forEach(i => s += `<text x="${x(i)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === rows.length - 1 ? 'end' : 'middle'}" font-size="11" fill="var(--mute)">${rows[i].d.slice(5)}</text>`);
+    names.forEach((n, j) => {
+      const own = n.includes('bizim bot');
+      s += `<polyline fill="none" stroke="${own ? 'var(--own)' : colors[j % colors.length]}" stroke-width="${own ? 3 : 1.6}" stroke-linejoin="round" stroke-linecap="round" points="${rows.map((r, i) => x(i) + ',' + y(r.v[j])).join(' ')}"/>`;
+    });
+    $('chart').innerHTML = s + '</svg>';
+    $('legend').replaceChildren(...names.map((n, j) => { const e = el('span'); const d = el('i'); d.style.background = n.includes('bizim bot') ? 'var(--own)' : colors[j % colors.length]; e.append(d, n); return e; }));
+  }
+
+  const tr = lg.recent_trades;
+  $('trades').replaceChildren(...(tr.length ? tr.slice(0, 20).map(t => {
+    const d = el('div', 'trade');
+    d.append(el('b', '', `${t.side} ${t.tic}`), document.createTextNode(` · ${t.bot} · $${f2(t.price)} · tutar $${f2(t.value)} · ${t.date}`), el('div', 'mute', t.reason));
+    return d;
+  }) : [el('p', 'note', 'Henüz işlem yok. İlk alım-satımlar bir sonraki işlem gününün açılışında yapılır.')]));
+}
+
+fetch('league.json?' + Date.now()).then(r => r.json()).then(draw).catch(() => { $('sub').textContent = 'Veri yüklenemedi, biraz sonra tekrar dene.'; });
+</script>
+</body>
+</html>
