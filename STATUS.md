@@ -22,18 +22,20 @@ Başlangıç 2026-10-22 | son veri 2026-10-22 | işlem günü 0. Karar kapanış
 | qlib LightGBM | 1000.00 | 0.00 | 0.00 | 0 | 0 |
 | freqtrade RSI | 1000.00 | 0.00 | 0.00 | 0 | 0 |
 
-Takip 2026-10-22 tarihinde basladi. Ilk islem gunu verisi bekleniyor.
+**Son veri:** 2026-10-22 | **Takip gunu:** 1 | **Baslangic:** 2026-10-22
+
+Al-ve-tut referansi: %-1.97. Referansi gecen: RSI Ortalamaya Dönüş, MACD Trend, Bollinger Dönüş, 6 Ay Momentum, SMA 20/100 Kesişim, ML: Gradient Boosting (walk-forward).
 
 | Strateji | Getiri % | Maks. dusus % | Sepet pozisyonu (son sinyal) |
 |---|---:|---:|---:|
-| Buy & Hold (referans) | 0.00 | 0.00 | 10/10 hisse |
-| SMA 20/100 Kesişim | 0.00 | 0.00 | 8/10 hisse |
 | RSI Ortalamaya Dönüş | 0.00 | 0.00 | 1/10 hisse |
-| Bollinger Dönüş | 0.00 | 0.00 | 3/10 hisse |
-| MACD Trend | 0.00 | 0.00 | 5/10 hisse |
-| 6 Ay Momentum | 0.00 | 0.00 | 8/10 hisse |
-| ML: Lojistik (walk-forward) | 0.00 | 0.00 | 8/10 hisse |
-| ML: Gradient Boosting (walk-forward) | 0.00 | 0.00 | 7/10 hisse |
+| MACD Trend | -0.73 | 0.00 | 5/10 hisse |
+| Bollinger Dönüş | -1.06 | 0.00 | 3/10 hisse |
+| 6 Ay Momentum | -1.37 | 0.00 | 8/10 hisse |
+| SMA 20/100 Kesişim | -1.70 | 0.00 | 8/10 hisse |
+| ML: Gradient Boosting (walk-forward) | -1.74 | 0.00 | 7/10 hisse |
+| Buy & Hold (referans) | -1.97 | 0.00 | 10/10 hisse |
+| ML: Lojistik (walk-forward) | -2.03 | 0.00 | 8/10 hisse |
 
 Son sinyal tarihi: 2026-10-22. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
 
