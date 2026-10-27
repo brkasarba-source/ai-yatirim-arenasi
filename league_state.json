@@ -3,8 +3,19 @@
  "budget": 1000.0,
  "bots": {
   "Al-ve-tut (referans)": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 1.4210854715202004e-14,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "QQQ": 0.14240956744745367,
+    "AAPL": 0.2864344678007728,
+    "MSFT": 0.19314340898116852,
+    "NVDA": 0.4739560993245243,
+    "AMZN": 0.40184849325823363,
+    "GOOGL": 0.31138098054030416,
+    "TSLA": 0.2679528315356147,
+    "JPM": 0.3003003003003003,
+    "XOM": 0.5491567670819233
+   },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
@@ -17,18 +28,136 @@
     "JPM": 1.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.401848,
+     "price": 248.85,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.311381,
+     "price": 321.15,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.267953,
+     "price": 373.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.3003,
+     "price": 333.0,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.549157,
+     "price": 179.37,
+     "value": 98.5,
+     "fee": 0.15,
+     "reason": "Referans: ba\u015flang\u0131\u00e7ta e\u015fit a\u011f\u0131rl\u0131kl\u0131 al ve tut"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1000.5
+    ],
+    [
+     "2026-10-26",
+     1011.23
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "SMA 20/100": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 198.80000000000013,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "QQQ": 0.14240956744745367,
+    "AAPL": 0.2864344678007728,
+    "MSFT": 0.19314340898116852,
+    "NVDA": 0.4739560993245243,
+    "AMZN": 0.40184849325823363,
+    "TSLA": 0.2679528315356147,
+    "XOM": 0.5575068446351196
+   },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
@@ -41,18 +170,111 @@
     "JPM": 0.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.401848,
+     "price": 248.85,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.267953,
+     "price": 373.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "20 g\u00fcnl\u00fck ort. 100 g\u00fcnl\u00fck ort. \u00fcst\u00fcne \u00e7\u0131kt\u0131 (trend yukar\u0131)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1001.55
+    ],
+    [
+     "2026-10-26",
+     1012.61
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "Bollinger": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 699.5500000000001,
+   "pos": {
+    "QQQ": 0.14240956744745367,
+    "NVDA": 0.4739560993245243,
+    "GOOGL": 0.31138098054030416
+   },
    "pending": {
     "SPY": 0.0,
     "QQQ": 1.0,
@@ -65,66 +287,264 @@
     "JPM": 0.0,
     "XOM": 0.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.311381,
+     "price": 321.15,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     999.56
+    ],
+    [
+     "2026-10-26",
+     1001.99
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "RSI": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 699.4414156851332,
+   "pos": {
+    "QQQ": 0.14240956744745367,
+    "NVDA": 0.46949561519691385,
+    "GOOGL": 0.31180219475133764
+   },
    "pending": {
     "SPY": 0.0,
     "QQQ": 1.0,
     "AAPL": 0.0,
     "MSFT": 0.0,
-    "NVDA": 0.0,
+    "NVDA": 1.0,
     "AMZN": 0.0,
-    "GOOGL": 0.0,
+    "GOOGL": 1.0,
     "TSLA": 0.0,
     "JPM": 0.0,
     "XOM": 0.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "RSI 30'un alt\u0131na indi (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.469496,
+     "price": 213.11,
+     "value": 100.05,
+     "fee": 0.15,
+     "reason": "RSI 30'un alt\u0131na indi (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.311802,
+     "price": 320.89,
+     "value": 100.05,
+     "fee": 0.15,
+     "reason": "RSI 30'un alt\u0131na indi (a\u015f\u0131r\u0131 sat\u0131m)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1000.16
+    ],
+    [
+     "2026-10-26",
+     1001.06
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "Momentum 6 ay": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 301.4940592327202,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "QQQ": 0.14240956744745367,
+    "AAPL": 0.2864344678007728,
+    "MSFT": 0.19314340898116852,
+    "NVDA": 0.4739560993245243,
+    "JPM": 0.3003003003003003,
+    "XOM": 0.5575068446351196
+   },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
-    "NVDA": 1.0,
+    "NVDA": 0.0,
     "AMZN": 0.0,
     "GOOGL": 0.0,
     "TSLA": 1.0,
     "JPM": 1.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.267953,
+     "price": 373.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.3003,
+     "price": 333.0,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.267953,
+     "price": 383.83,
+     "value": 102.85,
+     "fee": 0.15,
+     "reason": "Son 126 g\u00fcnl\u00fck getiri negatife d\u00f6nd\u00fc"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1001.47
+    ],
+    [
+     "2026-10-26",
+     1010.58
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "Lojistik ML": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 198.80000000000013,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "QQQ": 0.14240956744745367,
+    "AAPL": 0.2864344678007728,
+    "MSFT": 0.19314340898116852,
+    "NVDA": 0.4739560993245243,
+    "AMZN": 0.40184849325823363,
+    "GOOGL": 0.31138098054030416,
+    "XOM": 0.5575068446351196
+   },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
@@ -137,71 +557,338 @@
     "JPM": 0.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.401848,
+     "price": 248.85,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.311381,
+     "price": 321.15,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1001.52
+    ],
+    [
+     "2026-10-26",
+     1006.32
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "Trend EW (bizim bot)": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 298.9500000000001,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "QQQ": 0.14240956744745367,
+    "AAPL": 0.2864344678007728,
+    "MSFT": 0.19314340898116852,
+    "NVDA": 0.4739560993245243,
+    "JPM": 0.3003003003003003,
+    "XOM": 0.5575068446351196
+   },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
-    "NVDA": 1.0,
+    "NVDA": 0.0,
     "AMZN": 0.0,
     "GOOGL": 0.0,
-    "TSLA": 0.0,
+    "TSLA": 1.0,
     "JPM": 1.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.14241,
+     "price": 702.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.3003,
+     "price": 333.0,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1001.88
+    ],
+    [
+     "2026-10-26",
+     1008.04
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "MACD": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 702.0428296202339,
+   "pos": {
+    "AAPL": 0.2864344678007728,
+    "JPM": 0.3003003003003003,
+    "XOM": 0.5575068446351196
+   },
    "pending": {
     "SPY": 0.0,
     "QQQ": 0.0,
     "AAPL": 1.0,
     "MSFT": 0.0,
     "NVDA": 0.0,
-    "AMZN": 1.0,
+    "AMZN": 0.0,
     "GOOGL": 0.0,
     "TSLA": 1.0,
     "JPM": 1.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.401848,
+     "price": 248.85,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.267953,
+     "price": 373.2,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.3003,
+     "price": 333.0,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "AMZN",
+     "side": "SAT",
+     "shares": 0.401848,
+     "price": 249.47,
+     "value": 100.25,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini a\u015fa\u011f\u0131 kesti"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.267953,
+     "price": 383.83,
+     "value": 102.85,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini a\u015fa\u011f\u0131 kesti"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     999.96
+    ],
+    [
+     "2026-10-26",
+     1003.75
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "Gradient Boosting ML": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 300.2912332484617,
+   "pos": {
+    "SPY": 0.1315962584382165,
+    "AAPL": 0.2864344678007728,
+    "NVDA": 0.4739560993245243,
+    "AMZN": 0.40184849325823363,
+    "GOOGL": 0.31138098054030416,
+    "XOM": 0.5575068446351196,
+    "QQQ": 0.14174112625685772
+   },
    "pending": {
     "SPY": 1.0,
-    "QQQ": 0.0,
+    "QQQ": 1.0,
     "AAPL": 1.0,
-    "MSFT": 1.0,
+    "MSFT": 0.0,
     "NVDA": 1.0,
     "AMZN": 1.0,
     "GOOGL": 1.0,
@@ -209,69 +896,321 @@
     "JPM": 0.0,
     "XOM": 1.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.131596,
+     "price": 759.9,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.286434,
+     "price": 349.12,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.193143,
+     "price": 517.75,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.473956,
+     "price": 210.99,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.401848,
+     "price": 248.85,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.311381,
+     "price": 321.15,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.557507,
+     "price": 179.37,
+     "value": 100.0,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "MSFT",
+     "side": "SAT",
+     "shares": 0.193143,
+     "price": 527.4,
+     "value": 101.86,
+     "fee": 0.15,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.141741,
+     "price": 707.06,
+     "value": 100.22,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1001.36
+    ],
+    [
+     "2026-10-26",
+     1004.47
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "FinRL PPO": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 976.8834515441978,
+   "pos": {
+    "XOM": 0.1269213982733112
+   },
    "pending": {
-    "SPY": 0.0010355361386778358,
-    "QQQ": 0.0007559809625427872,
+    "SPY": 0.0030910625228534375,
+    "QQQ": 0.0022388204597102394,
     "AAPL": 0.0,
     "MSFT": 0.0,
-    "NVDA": 0.0010490368399195525,
-    "AMZN": 0.005964323275725847,
-    "GOOGL": 0.006368204968996541,
-    "TSLA": 0.0038156319231298485,
-    "JPM": 0.006128332165266263,
-    "XOM": 0.011019296878744124
+    "NVDA": 0.0031913384445073838,
+    "AMZN": 0.01811980454105965,
+    "GOOGL": 0.019203757463291223,
+    "TSLA": 0.011465240338223558,
+    "JPM": 0.018772692502365535,
+    "XOM": 0.034831548003679026
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-26",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.126921,
+     "price": 181.86,
+     "value": 23.08,
+     "fee": 0.03,
+     "reason": "FinRL PPO hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %2.3)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1000.0
+    ],
+    [
+     "2026-10-26",
+     1000.31
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "FinRL A2C": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 499.9296984516383,
+   "pos": {
+    "SPY": 0.09157683665914193,
+    "AAPL": 0.18690388395031055,
+    "MSFT": 0.12620863231265808,
+    "GOOGL": 0.34812174109940663,
+    "TSLA": 0.39746457535815616,
+    "XOM": 0.20223340717311442
+   },
    "pending": {
-    "SPY": 0.03452832027797388,
-    "QQQ": 0.006806356013333679,
-    "AAPL": 0.03275863729719364,
-    "MSFT": 0.03343790020860935,
+    "SPY": 0.10321335015681447,
+    "QQQ": 0.02018418027821394,
+    "AAPL": 0.09507716472788595,
+    "MSFT": 0.10025119362973302,
     "NVDA": 0.0,
     "AMZN": 0.0,
-    "GOOGL": 0.055921186292338956,
-    "TSLA": 0.07634345446525394,
+    "GOOGL": 0.16885741409816246,
+    "TSLA": 0.22970079516257225,
     "JPM": 0.0,
-    "XOM": 0.017500751964486517
+    "XOM": 0.05538364904235654
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.045438,
+     "price": 759.9,
+     "value": 34.53,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %3.5)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.093832,
+     "price": 349.12,
+     "value": 32.76,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %3.3)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.064583,
+     "price": 517.75,
+     "value": 33.44,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %3.3)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.174128,
+     "price": 321.15,
+     "value": 55.92,
+     "fee": 0.08,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %5.6)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.204564,
+     "price": 373.2,
+     "value": 76.34,
+     "fee": 0.11,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %7.6)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.046139,
+     "price": 762.25,
+     "value": 35.17,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %7.0)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.093072,
+     "price": 343.92,
+     "value": 32.01,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %6.4)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "MSFT",
+     "side": "AL",
+     "shares": 0.061626,
+     "price": 527.4,
+     "value": 32.5,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %6.6)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.173994,
+     "price": 320.89,
+     "value": 55.83,
+     "fee": 0.08,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %11.1)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.1929,
+     "price": 383.83,
+     "value": 74.04,
+     "fee": 0.11,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %15.2)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.202233,
+     "price": 181.86,
+     "value": 36.78,
+     "fee": 0.06,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %3.7)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     999.6
+    ],
+    [
+     "2026-10-26",
+     1004.78
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "qlib LightGBM": {
-   "cash": 1000.0,
-   "pos": {},
+   "cash": 2.842170943040401e-14,
+   "pos": {
+    "SPY": 0.263192516876433,
+    "AAPL": 0.5728689356015456,
+    "TSLA": 0.5359056630712294,
+    "QQQ": 0.28433080662118027,
+    "GOOGL": 0.6220690188930383
+   },
    "pending": {
     "SPY": 0.2,
-    "QQQ": 0.0,
+    "QQQ": 0.2,
     "AAPL": 0.2,
     "MSFT": 0.0,
     "NVDA": 0.0,
@@ -279,16 +1218,115 @@
     "GOOGL": 0.0,
     "TSLA": 0.2,
     "JPM": 0.2,
-    "XOM": 0.2
+    "XOM": 0.0
    },
-   "trades": [],
+   "trades": [
+    {
+     "date": "2026-10-23",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.263193,
+     "price": 759.9,
+     "value": 200.0,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.572869,
+     "price": 349.12,
+     "value": 200.0,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.535906,
+     "price": 373.2,
+     "value": 200.0,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.600601,
+     "price": 333.0,
+     "value": 200.0,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-23",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 1.106664,
+     "price": 179.37,
+     "value": 198.5,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "JPM",
+     "side": "SAT",
+     "shares": 0.600601,
+     "price": 334.0,
+     "value": 200.6,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "XOM",
+     "side": "SAT",
+     "shares": 1.106664,
+     "price": 181.86,
+     "value": 201.26,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.284331,
+     "price": 707.06,
+     "value": 201.04,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-10-26",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.622069,
+     "price": 320.89,
+     "value": 199.62,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    }
+   ],
    "equity": [
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1000.6
+    ],
+    [
+     "2026-10-26",
+     1007.9
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   },
   "freqtrade RSI": {
    "cash": 1000.0,
@@ -310,9 +1348,17 @@
     [
      "2026-10-22",
      1000.0
+    ],
+    [
+     "2026-10-23",
+     1000.0
+    ],
+    [
+     "2026-10-26",
+     1000.0
     ]
    ],
-   "last_date": "2026-10-22"
+   "last_date": "2026-10-26"
   }
  }
 }
