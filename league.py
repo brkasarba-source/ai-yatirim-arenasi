@@ -142,7 +142,7 @@ def main():
         b = st["bots"][name]; eq = b["equity"][-1][1]; vals = pd.Series([e[1] for e in b["equity"]])
         board.append({"bot": name, "family": cfg["fam"], "equity": round(eq, 2), "return_pct": round((eq / BUDGET - 1) * 100, 2), "cash": round(b["cash"], 2),
                       "positions": len(b["pos"]), "trades": len(b["trades"]), "maxdd_pct": round(float((vals / vals.cummax() - 1).min() * 100), 2),
-                      "last_date": b["last_date"]})
+                      "last_date": b["last_date"], "trade_list": b["trades"][::-1]})
     recent = sorted([dict(x, bot=n) for n, b in st["bots"].items() for x in b["trades"]], key=lambda x: (x["date"], x["bot"]), reverse=True)[:30]
     curves = {n: b["equity"] for n, b in st["bots"].items()}
     days = max(len(c) for c in curves.values()) - 1

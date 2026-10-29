@@ -29,6 +29,18 @@ svg{width:100%;height:auto;display:block}
 .trade:first-of-type{border-top:0}
 .trade b{font-weight:600}.mute{color:var(--mute)}
 .note{color:var(--mute);font-size:12px}
+details.bot{border-top:1px solid var(--line)}
+details.bot:first-of-type{border-top:0}
+details.bot>summary{list-style:none;cursor:pointer;display:block}
+details.bot>summary::-webkit-details-marker{display:none}
+details.bot>summary .row{border-top:0}
+details.bot>summary .name::before{content:"▸ ";color:var(--mute);display:inline-block;transition:transform .15s}
+details.bot[open]>summary .name::before{transform:rotate(90deg)}
+.blist{padding:2px 0 10px 14px}
+.blist .trade{padding:6px 0}
+.tag{display:inline-block;font-weight:600;font-size:12px;padding:1px 7px;border-radius:9px;margin-right:6px}
+.tag.al{background:color-mix(in srgb,var(--up) 18%,transparent);color:var(--up)}
+.tag.sat{background:color-mix(in srgb,var(--down) 18%,transparent);color:var(--down)}
 a{color:inherit}
 </style>
 </head>
@@ -38,7 +50,7 @@ a{color:inherit}
     <h1>AI Yatırım Arenası</h1>
     <p class="sub" id="sub">Yükleniyor…</p>
   </header>
-  <section class="card"><h2>Lig: her bota 1.000 $ sanal bütçe</h2><div id="board"></div></section>
+  <section class="card"><h2>Lig: her bota 1.000 $ sanal bütçe</h2><p class="note" style="margin:-4px 0 6px">Bir bota dokun, yaptığı işlemler açılsın.</p><div id="board"></div></section>
   <section class="card"><h2>Hesap değeri ($)</h2><div id="chart"></div><div class="legend" id="legend"></div></section>
   <section class="card"><h2>Son işlemler</h2><div id="trades"></div></section>
   <p class="note">Hepsi sanal para, gerçek işlem yok. Karar günün kapanışında verilir, ertesi gün açılışta uygulanır, maliyet %0,15. Eğitim amaçlıdır, yatırım tavsiyesi değildir. Veri her işlem günü otomatik güncellenir. <a href="https://github.com/brkasarba-source/ai-yatirim-arenasi/blob/main/STATUS.md">Ayrıntılı rapor</a> · <a href="https://github.com/brkasarba-source/ai-yatirim-arenasi">Kod</a></p>
@@ -54,13 +66,23 @@ function draw(lg) {
   const board = lg.board.slice().sort((a, b) => b.equity - a.equity);
   const span = Math.max(...board.map(b => Math.abs(b.return_pct)), 0.5);
   $('board').replaceChildren(...board.map(b => {
+    const det = el('details', 'bot'), sum = document.createElement('summary');
     const r = el('div', 'row' + (b.bot.includes('bizim bot') ? ' own' : ''));
     r.append(el('span', 'name', b.bot), el('span', 'val', '$' + f2(b.equity)), el('span', 'ret ' + (b.return_pct >= 0 ? 'up' : 'down'), (b.return_pct >= 0 ? '+' : '') + f2(b.return_pct) + '%'));
     r.append(el('span', 'fam', `${b.family} · ${b.positions} pozisyon · ${b.trades} işlem · maks. düşüş ${f2(b.maxdd_pct)}%`));
     const bar = el('div', 'bar'), i = document.createElement('i');
     const w = Math.abs(b.return_pct) / span * 50;
     i.style.cssText = `width:${w}%;left:${b.return_pct >= 0 ? 50 : 50 - w}%;background:var(--${b.return_pct >= 0 ? 'up' : 'down'})`;
-    bar.append(i); r.append(bar); return r;
+    bar.append(i); r.append(bar); sum.append(r);
+    const list = el('div', 'blist');
+    const tl = b.trade_list || [];
+    if (!tl.length) list.append(el('p', 'note', 'Bu bot henüz işlem yapmadı.'));
+    tl.forEach(t => {
+      const d = el('div', 'trade');
+      d.append(el('span', 'tag ' + (t.side === 'AL' ? 'al' : 'sat'), t.side), el('b', '', t.tic), document.createTextNode(` · ${t.date} · $${f2(t.price)} · tutar $${f2(t.value)}`), el('div', 'mute', t.reason));
+      list.append(d);
+    });
+    det.append(sum, list); return det;
   }));
 
   const names = Object.keys(lg.curves);
