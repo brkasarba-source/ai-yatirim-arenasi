@@ -2,57 +2,57 @@
 
 ## Bot ligi: her bota 1000 $ sanal bütçe
 
-Başlangıç 2026-10-22 | son veri 2026-10-29 | işlem günü 5. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.
+Başlangıç 2026-10-22 | son veri 2026-10-30 | işlem günü 6. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.
 
 | Bot | Değer $ | Getiri % | Maks. düşüş % | Pozisyon | İşlem |
 |---|---:|---:|---:|---:|---:|
-| Momentum 6 ay | 1013.83 | 1.38 | -0.09 | 8 | 12 |
-| SMA 20/100 | 1013.73 | 1.37 | -0.55 | 8 | 8 |
-| Trend EW (bizim bot) | 1011.29 | 1.13 | -0.09 | 8 | 10 |
-| MACD | 1008.18 | 0.82 | -0.00 | 3 | 9 |
-| Al-ve-tut (referans) | 1004.95 | 0.50 | -1.64 | 10 | 10 |
-| freqtrade RSI | 999.13 | -0.09 | -0.09 | 3 | 3 |
-| FinRL PPO | 996.73 | -0.33 | -0.37 | 4 | 5 |
-| qlib LightGBM | 994.80 | -0.52 | -2.56 | 5 | 18 |
-| Lojistik ML | 993.32 | -0.67 | -1.83 | 9 | 9 |
-| Bollinger | 991.06 | -0.89 | -1.50 | 3 | 3 |
-| RSI | 990.12 | -0.99 | -1.50 | 3 | 3 |
-| Gradient Boosting ML | 989.37 | -1.06 | -1.94 | 8 | 14 |
-| FinRL A2C | 987.96 | -1.20 | -2.66 | 8 | 31 |
+| MACD | 1007.55 | 0.75 | -0.06 | 3 | 9 |
+| SMA 20/100 | 1001.20 | 0.12 | -1.78 | 8 | 8 |
+| Momentum 6 ay | 1000.87 | 0.09 | -1.33 | 8 | 12 |
+| Trend EW (bizim bot) | 998.34 | -0.17 | -1.33 | 8 | 10 |
+| FinRL PPO | 997.03 | -0.30 | -0.37 | 5 | 7 |
+| freqtrade RSI | 989.68 | -1.03 | -1.03 | 3 | 3 |
+| Al-ve-tut (referans) | 989.18 | -1.08 | -3.19 | 10 | 10 |
+| Bollinger | 985.17 | -1.48 | -2.08 | 4 | 4 |
+| qlib LightGBM | 984.35 | -1.56 | -3.58 | 5 | 24 |
+| RSI | 981.11 | -1.89 | -2.40 | 3 | 3 |
+| Lojistik ML | 979.62 | -2.04 | -3.19 | 9 | 9 |
+| Gradient Boosting ML | 979.38 | -2.06 | -2.93 | 7 | 17 |
+| FinRL A2C | 977.15 | -2.29 | -3.72 | 7 | 33 |
 
 Son işlemler:
 
 | Tarih | Bot | İşlem | Hisse | Fiyat $ | Tutar $ | Neden |
 |---|---|---|---|---:|---:|---|
-| 2026-10-29 | qlib LightGBM | SAT | MSFT | 540.22 | 208.09 | qlib LightGBM hedef ağırlığını azalttı (hedef %0.0) |
-| 2026-10-29 | qlib LightGBM | AL | GOOGL | 286.88 | 31.98 | qlib LightGBM hedef ağırlığını artırdı (hedef %20.0) |
-| 2026-10-29 | qlib LightGBM | AL | XOM | 183.77 | 175.49 | qlib LightGBM hedef ağırlığını artırdı (hedef %20.0) |
-| 2026-10-29 | freqtrade RSI | AL | SPY | 768.79 | 100.0 | freqtrade RSI hedef ağırlığını artırdı (hedef %10.0) |
-| 2026-10-29 | freqtrade RSI | AL | QQQ | 716.54 | 100.0 | freqtrade RSI hedef ağırlığını artırdı (hedef %10.0) |
-| 2026-10-29 | freqtrade RSI | AL | NVDA | 214.36 | 100.0 | freqtrade RSI hedef ağırlığını artırdı (hedef %10.0) |
-| 2026-10-29 | MACD | SAT | AAPL | 348.0 | 99.68 | MACD sinyal çizgisini aşağı kesti |
-| 2026-10-29 | Lojistik ML | AL | TSLA | 405.63 | 99.86 | Model yarın için yükseliş ihtimalini >%52 gördü |
-| 2026-10-29 | Gradient Boosting ML | AL | QQQ | 716.54 | 99.43 | Model yarın için yükseliş ihtimalini >%52 gördü |
-| 2026-10-29 | Gradient Boosting ML | AL | MSFT | 540.22 | 99.43 | Model yarın için yükseliş ihtimalini >%52 gördü |
-| 2026-10-29 | Gradient Boosting ML | AL | XOM | 183.77 | 99.43 | Model yarın için yükseliş ihtimalini >%52 gördü |
-| 2026-10-29 | FinRL A2C | SAT | SPY | 768.79 | 26.79 | FinRL A2C hedef ağırlığını azalttı (hedef %11.4) |
+| 2026-10-30 | qlib LightGBM | SAT | QQQ | 697.21 | 198.24 | qlib LightGBM hedef ağırlığını azalttı (hedef %0.0) |
+| 2026-10-30 | qlib LightGBM | SAT | GOOGL | 281.12 | 195.88 | qlib LightGBM hedef ağırlığını azalttı (hedef %0.0) |
+| 2026-10-30 | qlib LightGBM | SAT | XOM | 185.98 | 177.6 | qlib LightGBM hedef ağırlığını azalttı (hedef %0.0) |
+| 2026-10-30 | qlib LightGBM | AL | AAPL | 346.72 | 196.57 | qlib LightGBM hedef ağırlığını artırdı (hedef %20.0) |
+| 2026-10-30 | qlib LightGBM | AL | AMZN | 232.54 | 196.57 | qlib LightGBM hedef ağırlığını artırdı (hedef %20.0) |
+| 2026-10-30 | qlib LightGBM | AL | JPM | 345.29 | 176.87 | qlib LightGBM hedef ağırlığını artırdı (hedef %20.0) |
+| 2026-10-30 | Gradient Boosting ML | SAT | QQQ | 697.21 | 96.75 | Model yükseliş ihtimalini <=%52 gördü |
+| 2026-10-30 | Gradient Boosting ML | SAT | MSFT | 525.27 | 96.68 | Model yükseliş ihtimalini <=%52 gördü |
+| 2026-10-30 | Gradient Boosting ML | AL | TSLA | 393.22 | 97.81 | Model yarın için yükseliş ihtimalini >%52 gördü |
+| 2026-10-30 | FinRL PPO | AL | TSLA | 393.22 | 22.96 | FinRL PPO hedef ağırlığını artırdı (hedef %2.3) |
+| 2026-10-30 | FinRL PPO | AL | XOM | 185.98 | 22.33 | FinRL PPO hedef ağırlığını artırdı (hedef %6.9) |
+| 2026-10-30 | FinRL A2C | SAT | AMZN | 232.54 | 20.0 | FinRL A2C hedef ağırlığını azalttı (hedef %0.0) |
 
-**Son veri:** 2026-10-29 | **Takip gunu:** 6 | **Baslangic:** 2026-10-22
+**Son veri:** 2026-10-30 | **Takip gunu:** 7 | **Baslangic:** 2026-10-22
 
-Al-ve-tut referansi: %-1.74. Referansi gecen: MACD Trend, 6 Ay Momentum, SMA 20/100 Kesişim, RSI Ortalamaya Dönüş.
+Al-ve-tut referansi: %-3.28. Referansi gecen: MACD Trend, 6 Ay Momentum, SMA 20/100 Kesişim, RSI Ortalamaya Dönüş, Bollinger Dönüş.
 
 | Strateji | Getiri % | Maks. dusus % | Sepet pozisyonu (son sinyal) |
 |---|---:|---:|---:|
-| MACD Trend | -0.29 | -0.06 | 3/10 hisse |
-| 6 Ay Momentum | -0.33 | -0.02 | 8/10 hisse |
-| SMA 20/100 Kesişim | -0.43 | -0.53 | 8/10 hisse |
-| RSI Ortalamaya Dönüş | -0.94 | -1.49 | 3/10 hisse |
-| Buy & Hold (referans) | -1.74 | -1.64 | 10/10 hisse |
-| Bollinger Dönüş | -2.06 | -1.49 | 4/10 hisse |
-| ML: Gradient Boosting (walk-forward) | -2.70 | -1.81 | 7/10 hisse |
-| ML: Lojistik (walk-forward) | -2.79 | -1.78 | 9/10 hisse |
+| MACD Trend | -0.35 | -0.06 | 3/10 hisse |
+| 6 Ay Momentum | -1.61 | -1.29 | 8/10 hisse |
+| SMA 20/100 Kesişim | -1.67 | -1.76 | 8/10 hisse |
+| RSI Ortalamaya Dönüş | -1.84 | -2.38 | 3/10 hisse |
+| Bollinger Dönüş | -3.11 | -2.54 | 5/10 hisse |
+| Buy & Hold (referans) | -3.28 | -3.18 | 10/10 hisse |
+| ML: Gradient Boosting (walk-forward) | -3.59 | -2.71 | 8/10 hisse |
+| ML: Lojistik (walk-forward) | -4.13 | -3.14 | 9/10 hisse |
 
-Son sinyal tarihi: 2026-10-29. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
+Son sinyal tarihi: 2026-10-30. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
 
 ## Gercek repolar: FinRL ve qlib (2025 ve 2026 testi)
 
