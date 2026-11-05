@@ -166,9 +166,13 @@
     [
      "2026-11-03",
      984.18
+    ],
+    [
+     "2026-11-04",
+     1000.54
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "SMA 20/100": {
    "cash": 198.80000000000013,
@@ -184,7 +188,7 @@
    },
    "pending": {
     "SPY": 1.0,
-    "QQQ": 1.0,
+    "QQQ": 0.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
     "NVDA": 1.0,
@@ -312,27 +316,32 @@
     [
      "2026-11-03",
      995.77
+    ],
+    [
+     "2026-11-04",
+     1005.05
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "Bollinger": {
-   "cash": 402.80146064129315,
+   "cash": 302.37597051507936,
    "pos": {
     "QQQ": 0.14240956744745367,
     "NVDA": 0.4739560993245243,
     "GOOGL": 0.31138098054030416,
     "AMZN": 0.4237564351847685,
     "SPY": 0.13024845655590964,
-    "MSFT": 0.19419376991272924
+    "MSFT": 0.19419376991272924,
+    "AAPL": 0.2935710845793542
    },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
-    "AAPL": 1.0,
-    "MSFT": 1.0,
+    "AAPL": 0.0,
+    "MSFT": 0.0,
     "NVDA": 1.0,
-    "AMZN": 1.0,
+    "AMZN": 0.0,
     "GOOGL": 1.0,
     "TSLA": 0.0,
     "JPM": 0.0,
@@ -398,6 +407,16 @@
      "value": 98.85,
      "fee": 0.15,
      "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.293571,
+     "price": 341.57,
+     "value": 100.28,
+     "fee": 0.15,
+     "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
     }
    ],
    "equity": [
@@ -436,9 +455,13 @@
     [
      "2026-11-03",
      991.21
+    ],
+    [
+     "2026-11-04",
+     1008.88
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "RSI": {
    "cash": 601.1023534847469,
@@ -538,9 +561,13 @@
     [
      "2026-11-03",
      983.55
+    ],
+    [
+     "2026-11-04",
+     990.91
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "Momentum 6 ay": {
    "cash": 201.60178514583077,
@@ -556,13 +583,13 @@
    },
    "pending": {
     "SPY": 1.0,
-    "QQQ": 1.0,
+    "QQQ": 0.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
-    "NVDA": 1.0,
+    "NVDA": 0.0,
     "AMZN": 0.0,
     "GOOGL": 0.0,
-    "TSLA": 1.0,
+    "TSLA": 0.0,
     "JPM": 1.0,
     "XOM": 1.0
    },
@@ -724,9 +751,13 @@
     [
      "2026-11-03",
      991.56
+    ],
+    [
+     "2026-11-04",
+     999.18
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "Lojistik ML": {
    "cash": 98.78551488172513,
@@ -745,7 +776,7 @@
     "SPY": 1.0,
     "QQQ": 1.0,
     "AAPL": 1.0,
-    "MSFT": 1.0,
+    "MSFT": 0.0,
     "NVDA": 1.0,
     "AMZN": 1.0,
     "GOOGL": 1.0,
@@ -881,12 +912,16 @@
     [
      "2026-11-03",
      974.28
+    ],
+    [
+     "2026-11-04",
+     986.62
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "Trend EW (bizim bot)": {
-   "cash": 295.3081382257223,
+   "cash": 195.7497885194723,
    "pos": {
     "SPY": 0.1315962584382165,
     "QQQ": 0.14240956744745367,
@@ -894,17 +929,18 @@
     "MSFT": 0.19314340898116852,
     "JPM": 0.3003003003003003,
     "XOM": 0.5575068446351196,
-    "TSLA": 0.2539074178779582
+    "TSLA": 0.2539074178779582,
+    "NVDA": 0.48849747347651734
    },
    "pending": {
     "SPY": 1.0,
-    "QQQ": 1.0,
+    "QQQ": 0.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
-    "NVDA": 1.0,
+    "NVDA": 0.0,
     "AMZN": 0.0,
     "GOOGL": 0.0,
-    "TSLA": 1.0,
+    "TSLA": 0.0,
     "JPM": 1.0,
     "XOM": 1.0
    },
@@ -1018,6 +1054,16 @@
      "value": 95.88,
      "fee": 0.14,
      "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. alt\u0131na indi veya 126 g\u00fcnl\u00fck getiri negatife d\u00f6nd\u00fc"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "NVDA",
+     "side": "AL",
+     "shares": 0.488497,
+     "price": 203.5,
+     "value": 99.41,
+     "fee": 0.15,
+     "reason": "Kapan\u0131\u015f 200 g\u00fcnl\u00fck ort. \u00fcst\u00fcnde ve 126 g\u00fcnl\u00fck getiri pozitif"
     }
    ],
    "equity": [
@@ -1056,15 +1102,18 @@
     [
      "2026-11-03",
      989.47
+    ],
+    [
+     "2026-11-04",
+     998.33
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "MACD": {
-   "cash": 701.0292415938467,
+   "cash": 798.0346545679606,
    "pos": {
     "JPM": 0.3003003003003003,
-    "XOM": 0.5575068446351196,
     "TSLA": 0.2523950939047257
    },
    "pending": {
@@ -1073,7 +1122,7 @@
     "AAPL": 0.0,
     "MSFT": 0.0,
     "NVDA": 0.0,
-    "AMZN": 0.0,
+    "AMZN": 1.0,
     "GOOGL": 0.0,
     "TSLA": 1.0,
     "JPM": 1.0,
@@ -1169,6 +1218,16 @@
      "value": 99.68,
      "fee": 0.15,
      "reason": "MACD sinyal \u00e7izgisini a\u015fa\u011f\u0131 kesti"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "XOM",
+     "side": "SAT",
+     "shares": 0.557507,
+     "price": 174.26,
+     "value": 97.15,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini a\u015fa\u011f\u0131 kesti"
     }
    ],
    "equity": [
@@ -1207,32 +1266,36 @@
     [
      "2026-11-03",
      1002.04
+    ],
+    [
+     "2026-11-04",
+     1000.99
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "Gradient Boosting ML": {
-   "cash": 297.92289794883436,
+   "cash": 295.5836543515558,
    "pos": {
     "SPY": 0.1315962584382165,
-    "NVDA": 0.4739560993245243,
     "AMZN": 0.40184849325823363,
     "GOOGL": 0.31138098054030416,
     "XOM": 0.5410653244662358,
     "QQQ": 0.1412305510410943,
-    "MSFT": 0.19124290211144748
+    "MSFT": 0.19124290211144748,
+    "TSLA": 0.25933884292309944
    },
    "pending": {
-    "SPY": 1.0,
+    "SPY": 0.0,
     "QQQ": 1.0,
     "AAPL": 0.0,
-    "MSFT": 1.0,
-    "NVDA": 0.0,
+    "MSFT": 0.0,
+    "NVDA": 1.0,
     "AMZN": 1.0,
     "GOOGL": 1.0,
-    "TSLA": 1.0,
-    "JPM": 0.0,
-    "XOM": 1.0
+    "TSLA": 0.0,
+    "JPM": 1.0,
+    "XOM": 0.0
    },
    "trades": [
     {
@@ -1444,6 +1507,26 @@
      "value": 97.34,
      "fee": 0.15,
      "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "NVDA",
+     "side": "SAT",
+     "shares": 0.473956,
+     "price": 203.5,
+     "value": 96.45,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.259339,
+     "price": 379.8,
+     "value": 98.5,
+     "fee": 0.15,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
     }
    ],
    "equity": [
@@ -1482,30 +1565,34 @@
     [
      "2026-11-03",
      975.53
+    ],
+    [
+     "2026-11-04",
+     988.86
     ]
    ],
-   "last_date": "2026-11-03"
+   "last_date": "2026-11-04"
   },
   "FinRL PPO": {
-   "cash": 811.8948599042576,
+   "cash": 740.3594472187779,
    "pos": {
-    "XOM": 0.37066184737193253,
-    "AMZN": 0.09629738185654653,
+    "XOM": 0.5089210150781408,
+    "AMZN": 0.18214153866526972,
     "GOOGL": 0.1537000618805339,
-    "JPM": 0.07714817061597251,
+    "JPM": 0.1520838759149279,
     "TSLA": 0.05840214704982193
    },
    "pending": {
-    "SPY": 0.008164892508209677,
-    "QQQ": 0.005927945564086109,
+    "SPY": 0.010606400971171754,
+    "QQQ": 0.00807307590219142,
     "AAPL": 0.0,
     "MSFT": 0.0,
-    "NVDA": 0.008159100179824035,
-    "AMZN": 0.04551346603575416,
-    "GOOGL": 0.049311539997331316,
-    "TSLA": 0.030251513966782332,
-    "JPM": 0.051976777505910766,
-    "XOM": 0.09105790374516737
+    "NVDA": 0.011244384739763146,
+    "AMZN": 0.05668359753897218,
+    "GOOGL": 0.06299475617075828,
+    "TSLA": 0.038783316049916014,
+    "JPM": 0.0623422048289044,
+    "XOM": 0.10787174970210912
    },
    "trades": [
     {
@@ -1587,6 +1674,36 @@
      "value": 20.8,
      "fee": 0.03,
      "reason": "FinRL PPO hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %4.4)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.085844,
+     "price": 248.59,
+     "value": 21.34,
+     "fee": 0.03,
+     "reason": "FinRL PPO hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %4.6)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.074936,
+     "price": 340.0,
+     "value": 25.48,
+     "fee": 0.04,
+     "reason": "FinRL PPO hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %5.2)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 0.138259,
+     "price": 178.0,
+     "value": 24.61,
+     "fee": 0.04,
+     "reason": "FinRL PPO hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %9.1)"
     }
    ],
    "equity": [
@@ -1621,33 +1738,42 @@
     [
      "2026-11-02",
      994.89
+    ],
+    [
+     "2026-11-03",
+     994.05
+    ],
+    [
+     "2026-11-04",
+     995.41
     ]
    ],
-   "last_date": "2026-11-02"
+   "last_date": "2026-11-04"
   },
   "FinRL A2C": {
-   "cash": 49.29811405606149,
+   "cash": 24.61740945031791,
    "pos": {
-    "SPY": 0.14772138430140005,
-    "AAPL": 0.16484036493091192,
-    "MSFT": 0.1298265333377267,
-    "GOOGL": 1.1842450270468041,
-    "TSLA": 0.5409441163139804,
+    "SPY": 0.14688513579319165,
+    "AAPL": 0.08214561278714727,
+    "MSFT": 0.06228611126219161,
+    "GOOGL": 1.4047117541385226,
+    "TSLA": 0.46767627690293123,
     "XOM": 0.2929734560236424,
-    "QQQ": 0.09872922632162691,
-    "AMZN": 0.08498969623526097
+    "QQQ": 0.1397447657060129,
+    "AMZN": 0.08211405901336948,
+    "JPM": 0.07039496643252961
    },
    "pending": {
-    "SPY": 0.1351671626471969,
-    "QQQ": 0.07194888426859901,
-    "AAPL": 0.057753037211861216,
-    "MSFT": 0.07050263208941367,
+    "SPY": 0.15522331758778737,
+    "QQQ": 0.10354885300128527,
+    "AAPL": 0.029363548170208816,
+    "MSFT": 0.03578444183080748,
     "NVDA": 0.0,
-    "AMZN": 0.0010456986779549533,
-    "GOOGL": 0.33837788344363234,
-    "TSLA": 0.2607813881886793,
-    "JPM": 0.008359379449526982,
-    "XOM": 0.05597553719576272
+    "AMZN": 0.002033893049405519,
+    "GOOGL": 0.4078670493657647,
+    "TSLA": 0.21586560119756384,
+    "JPM": 0.015658526948516632,
+    "XOM": 0.03457737092356697
    },
    "trades": [
     {
@@ -2039,6 +2165,116 @@
      "value": 66.83,
      "fee": 0.1,
      "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %34.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "AMZN",
+     "side": "SAT",
+     "shares": 0.080898,
+     "price": 248.59,
+     "value": 20.11,
+     "fee": 0.03,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.1)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.026947,
+     "price": 752.73,
+     "value": 20.28,
+     "fee": 0.03,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %13.5)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.083461,
+     "price": 406.25,
+     "value": 33.91,
+     "fee": 0.05,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %26.1)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "SPY",
+     "side": "SAT",
+     "shares": 0.027784,
+     "price": 762.99,
+     "value": 21.2,
+     "fee": 0.03,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %11.6)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AAPL",
+     "side": "SAT",
+     "shares": 0.082695,
+     "price": 341.57,
+     "value": 28.25,
+     "fee": 0.04,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %2.9)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "MSFT",
+     "side": "SAT",
+     "shares": 0.06754,
+     "price": 543.7,
+     "value": 36.72,
+     "fee": 0.06,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %3.5)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.156729,
+     "price": 379.8,
+     "value": 59.53,
+     "fee": 0.09,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %18.3)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.041016,
+     "price": 688.43,
+     "value": 28.24,
+     "fee": 0.04,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %9.9)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.078022,
+     "price": 264.82,
+     "value": 20.66,
+     "fee": 0.03,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %2.2)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.220467,
+     "price": 283.51,
+     "value": 62.5,
+     "fee": 0.09,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %41.1)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.070395,
+     "price": 346.0,
+     "value": 24.36,
+     "fee": 0.04,
+     "reason": "FinRL A2C hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %2.5)"
     }
    ],
    "equity": [
@@ -2073,29 +2309,37 @@
     [
      "2026-11-02",
      971.6
+    ],
+    [
+     "2026-11-03",
+     970.34
+    ],
+    [
+     "2026-11-04",
+     979.51
     ]
    ],
-   "last_date": "2026-11-02"
+   "last_date": "2026-11-04"
   },
   "qlib LightGBM": {
-   "cash": 3.552713678800501e-15,
+   "cash": 5.684341886080802e-14,
    "pos": {
-    "SPY": 0.263192516876433,
-    "JPM": 0.5710654191641318,
-    "QQQ": 0.28506836527700274,
-    "MSFT": 0.37825604069404856,
-    "NVDA": 0.9551088469050883
+    "NVDA": 0.9551088469050883,
+    "SPY": 0.25648443719046954,
+    "QQQ": 0.28426283036652766,
+    "AAPL": 0.5729281085311202,
+    "XOM": 1.117162076992489
    },
    "pending": {
-    "SPY": 0.0,
-    "QQQ": 0.0,
+    "SPY": 0.2,
+    "QQQ": 0.2,
     "AAPL": 0.0,
     "MSFT": 0.0,
     "NVDA": 0.2,
     "AMZN": 0.2,
     "GOOGL": 0.2,
-    "TSLA": 0.2,
-    "JPM": 0.2,
+    "TSLA": 0.0,
+    "JPM": 0.0,
     "XOM": 0.0
    },
    "trades": [
@@ -2408,6 +2652,146 @@
      "value": 20.06,
      "fee": 0.03,
      "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "SPY",
+     "side": "SAT",
+     "shares": 0.263193,
+     "price": 752.73,
+     "value": 198.11,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "QQQ",
+     "side": "SAT",
+     "shares": 0.285068,
+     "price": 684.39,
+     "value": 195.1,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "MSFT",
+     "side": "SAT",
+     "shares": 0.378256,
+     "price": 509.01,
+     "value": 192.54,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.787267,
+     "price": 248.59,
+     "value": 195.71,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.698379,
+     "price": 280.23,
+     "value": 195.71,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-03",
+     "tic": "TSLA",
+     "side": "AL",
+     "shares": 0.47404,
+     "price": 406.25,
+     "value": 192.58,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AMZN",
+     "side": "SAT",
+     "shares": 0.787267,
+     "price": 264.82,
+     "value": 208.48,
+     "fee": 0.31,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "GOOGL",
+     "side": "SAT",
+     "shares": 0.698379,
+     "price": 283.51,
+     "value": 198.0,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.47404,
+     "price": 379.8,
+     "value": 180.04,
+     "fee": 0.27,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "JPM",
+     "side": "SAT",
+     "shares": 0.571065,
+     "price": 346.0,
+     "value": 197.59,
+     "fee": 0.3,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 azaltt\u0131 (hedef %0.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "SPY",
+     "side": "AL",
+     "shares": 0.256484,
+     "price": 762.99,
+     "value": 195.7,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "QQQ",
+     "side": "AL",
+     "shares": 0.284263,
+     "price": 688.43,
+     "value": 195.7,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.572928,
+     "price": 341.57,
+     "value": 195.7,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "XOM",
+     "side": "AL",
+     "shares": 1.117162,
+     "price": 174.26,
+     "value": 194.68,
+     "fee": 0.29,
+     "reason": "qlib LightGBM hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %20.0)"
     }
    ],
    "equity": [
@@ -2442,16 +2826,25 @@
     [
      "2026-11-02",
      971.41
+    ],
+    [
+     "2026-11-03",
+     972.25
+    ],
+    [
+     "2026-11-04",
+     973.86
     ]
    ],
-   "last_date": "2026-11-02"
+   "last_date": "2026-11-04"
   },
   "freqtrade RSI": {
-   "cash": 699.5500000000001,
+   "cash": 600.4208982261673,
    "pos": {
     "SPY": 0.13007453642487946,
     "QQQ": 0.139559554339596,
-    "NVDA": 0.46650494362412753
+    "NVDA": 0.46650494362412753,
+    "AMZN": 0.3737656826903168
    },
    "pending": {
     "SPY": 0.1,
@@ -2459,7 +2852,7 @@
     "AAPL": 0.0,
     "MSFT": 0.0,
     "NVDA": 0.1,
-    "AMZN": 0.0,
+    "AMZN": 0.1,
     "GOOGL": 0.0,
     "TSLA": 0.0,
     "JPM": 0.0,
@@ -2493,6 +2886,16 @@
      "shares": 0.466505,
      "price": 214.36,
      "value": 100.0,
+     "fee": 0.15,
+     "reason": "freqtrade RSI hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %10.0)"
+    },
+    {
+     "date": "2026-11-04",
+     "tic": "AMZN",
+     "side": "AL",
+     "shares": 0.373766,
+     "price": 264.82,
+     "value": 98.98,
      "fee": 0.15,
      "reason": "freqtrade RSI hedef a\u011f\u0131rl\u0131\u011f\u0131n\u0131 art\u0131rd\u0131 (hedef %10.0)"
     }
@@ -2529,9 +2932,17 @@
     [
      "2026-11-02",
      986.69
+    ],
+    [
+     "2026-11-03",
+     989.73
+    ],
+    [
+     "2026-11-04",
+     989.53
     ]
    ],
-   "last_date": "2026-11-02"
+   "last_date": "2026-11-04"
   }
  }
 }
