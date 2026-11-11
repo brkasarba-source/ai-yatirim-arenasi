@@ -7,6 +7,7 @@ Ajan modülleri agents/ klasöründedir; biri hata verirse o bot o gün atlanır
 Çıktı: league_state.json (kalıcı durum + tüm işlemler), league.json (özet)."""
 import json, os, subprocess, sys, tempfile, traceback
 import numpy as np, pandas as pd, yfinance as yf
+import dl
 import arena
 from own_bot import sig_trend_ew
 
@@ -39,7 +40,7 @@ for name, mod, fam in (("FinRL PPO", "finrl_agent", "RL ajanı (FinRL)"), ("FinR
 
 
 def load(start_date, wanted):
-    px = yf.download(TICKERS, start=arena.START, progress=False, auto_adjust=True)
+    px = dl.download(TICKERS, arena.START)
     cal = px["Close"]["SPY"].dropna().index
     close, opn = px["Close"].reindex(cal).ffill(), px["Open"].reindex(cal)
     opn = opn.fillna(close)

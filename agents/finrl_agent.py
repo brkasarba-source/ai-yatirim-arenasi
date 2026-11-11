@@ -4,6 +4,7 @@ her günün karar sonrası portföy ağırlıkları hedef ağırlık olarak dön
 bu hedef ağırlıkları ertesi gün açılışında uygular."""
 import os
 import numpy as np, pandas as pd, yfinance as yf
+import dl
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(os.path.dirname(HERE), "models")
@@ -14,7 +15,7 @@ COST = 0.0015
 
 def build_df():
     from finrl.meta.preprocessor.preprocessors import FeatureEngineer
-    raw = yf.download(TICKERS, start="2015-01-01", progress=False, auto_adjust=True)
+    raw = dl.download(TICKERS, "2015-01-01")
     rows = []
     for t in TICKERS:
         d = raw.xs(t, axis=1, level=1).dropna().reset_index()

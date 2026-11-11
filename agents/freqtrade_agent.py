@@ -5,6 +5,7 @@ Her çalıştırmada lig başlangıç tarihinden bugüne backtest çalıştırı
 Not: freqtrade girişleri mum açılışında yapar; lig bu hedefi bir sonraki gün açılışında uygular (bir gün gecikmeli)."""
 import glob, json, os, subprocess, sys, tempfile
 import numpy as np, pandas as pd, yfinance as yf
+import dl
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -15,7 +16,7 @@ MAPPING = {"SPY": "BTC/USDT", "QQQ": "ETH/USDT", "AAPL": "XRP/USDT", "MSFT": "AD
 def write_data():
     out = os.path.join(ROOT, "freqtrade_user", "data", "kraken")
     os.makedirs(out, exist_ok=True)
-    raw = yf.download(list(MAPPING), start="2015-01-01", progress=False, auto_adjust=True)
+    raw = dl.download(list(MAPPING), "2015-01-01")
     for t, pair in MAPPING.items():
         g = raw.xs(t, axis=1, level=1).dropna().reset_index()
         g.columns = [c.lower() for c in g.columns]

@@ -5,12 +5,13 @@ import pandas as pd, yfinance as yf
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+import dl  # noqa: E402
 TICKERS = ["SPY", "QQQ", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "TSLA", "JPM", "XOM"]
 
 
 def main():
     name, mod, start, out = sys.argv[1:5]
-    px = yf.download(TICKERS, start="2015-01-01", progress=False, auto_adjust=True)
+    px = dl.download(TICKERS, "2015-01-01")
     cal = px["Close"]["SPY"].dropna().index
     w = importlib.import_module("agents." + mod).targets(name, cal, None, None, start, TICKERS)
     w.reindex(columns=TICKERS).to_csv(out)

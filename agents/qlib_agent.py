@@ -3,6 +3,7 @@ Her çalıştırmada yfinance verisi qlib ikili formatına çevrilir (qlib'in ke
 hesaplanır ve her gün için en yüksek tahminli 5 hisse eşit ağırlıkla (%20) hedef olarak döner."""
 import os, subprocess, sys, tempfile
 import numpy as np, pandas as pd, yfinance as yf
+import dl
 
 os.environ.setdefault("MLFLOW_ALLOW_FILE_STORE", "true")
 os.environ.setdefault("MLFLOW_DISABLE_AGENT_HINT", "1")
@@ -16,7 +17,7 @@ TOPK = 5
 def build_provider(workdir):
     csv, out = os.path.join(workdir, "csv"), os.path.join(workdir, "qlib_data")
     os.makedirs(csv, exist_ok=True)
-    raw = yf.download(TICKERS, start="2015-01-01", progress=False, auto_adjust=True)
+    raw = dl.download(TICKERS, "2015-01-01")
     for t in TICKERS:
         d = raw.xs(t, axis=1, level=1).dropna().reset_index()
         d.columns = [c.lower() for c in d.columns]

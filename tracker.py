@@ -5,6 +5,7 @@ ve her gunun sinyal kararini signals_log.csv'ye BIR KEZ ekler (degistirilmez kay
 Cikti: tracker.json (egriler + metrikler)"""
 import csv, json, os
 import numpy as np, pandas as pd, yfinance as yf
+import dl
 import arena
 
 FORWARD_START = "2026-10-22"
@@ -13,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 def main():
-    px = yf.download(arena.TICKERS, start=arena.START, progress=False, auto_adjust=True)
+    px = dl.download(arena.TICKERS, arena.START)
     rets, today_pos = {}, []
     for name, (fam, fn) in arena.STRATS.items():
         legs = []
