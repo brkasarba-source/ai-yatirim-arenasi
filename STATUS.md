@@ -2,28 +2,30 @@
 
 ## Bot ligi: her bota 1000 $ sanal bütçe
 
-Başlangıç 2026-10-22 | son veri 2026-11-13 | işlem günü 16. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.
+Başlangıç 2026-10-22 | son veri 2026-11-16 | işlem günü 17. Karar kapanışta, uygulama ertesi gün açılışta, maliyet %0,15.
 
 | Bot | Değer $ | Getiri % | Maks. düşüş % | Pozisyon | İşlem |
 |---|---:|---:|---:|---:|---:|
-| Bollinger | 1007.01 | 0.70 | -2.25 | 5 | 13 |
-| SMA 20/100 | 995.70 | -0.43 | -4.90 | 6 | 10 |
 | FinRL PPO | 995.41 | -0.46 | -0.64 | 5 | 11 |
+| Bollinger | 993.36 | -0.66 | -2.25 | 5 | 13 |
 | freqtrade RSI | 989.53 | -1.05 | -1.33 | 4 | 4 |
-| MACD | 983.07 | -1.69 | -2.62 | 4 | 16 |
-| Momentum 6 ay | 982.38 | -1.76 | -3.92 | 6 | 18 |
-| Trend EW (bizim bot) | 981.44 | -1.86 | -3.77 | 6 | 18 |
+| SMA 20/100 | 984.33 | -1.57 | -4.90 | 5 | 11 |
 | FinRL A2C | 979.51 | -2.05 | -4.39 | 9 | 50 |
-| Al-ve-tut (referans) | 977.97 | -2.20 | -6.68 | 10 | 10 |
 | qlib LightGBM | 973.86 | -2.61 | -4.85 | 5 | 45 |
-| RSI | 967.66 | -3.23 | -3.73 | 4 | 4 |
-| Lojistik ML | 967.51 | -3.25 | -6.27 | 6 | 14 |
-| Gradient Boosting ML | 946.24 | -5.38 | -6.22 | 5 | 49 |
+| MACD | 972.50 | -2.75 | -3.54 | 4 | 16 |
+| Momentum 6 ay | 970.62 | -2.94 | -4.31 | 6 | 18 |
+| Trend EW (bizim bot) | 969.68 | -3.03 | -4.16 | 6 | 18 |
+| RSI | 957.04 | -4.30 | -4.79 | 4 | 4 |
+| Lojistik ML | 954.03 | -4.60 | -6.27 | 6 | 14 |
+| Al-ve-tut (referans) | 953.59 | -4.64 | -6.68 | 10 | 10 |
+| Gradient Boosting ML | 934.18 | -6.58 | -7.41 | 6 | 50 |
 
 Son işlemler:
 
 | Tarih | Bot | İşlem | Hisse | Fiyat $ | Tutar $ | Neden |
 |---|---|---|---|---:|---:|---|
+| 2026-11-16 | SMA 20/100 | SAT | SPY | 749.66 | 98.65 | 20 günlük ort. 100 günlüğün altına indi (trend aşağı) |
+| 2026-11-16 | Gradient Boosting ML | AL | TSLA | 387.0 | 94.27 | Model yarın için yükseliş ihtimalini >%52 gördü |
 | 2026-11-13 | Trend EW (bizim bot) | AL | AMZN | 269.56 | 98.36 | Kapanış 200 günlük ort. üstünde ve 126 günlük getiri pozitif |
 | 2026-11-13 | Momentum 6 ay | AL | AMZN | 269.56 | 98.46 | Son 126 günlük getiri pozitif |
 | 2026-11-13 | MACD | AL | GOOGL | 302.98 | 98.72 | MACD sinyal çizgisini yukarı kesti |
@@ -34,25 +36,23 @@ Son işlemler:
 | 2026-11-13 | Gradient Boosting ML | AL | NVDA | 169.91 | 95.23 | Model yarın için yükseliş ihtimalini >%52 gördü |
 | 2026-11-12 | Trend EW (bizim bot) | SAT | AMZN | 267.92 | 96.12 | Kapanış 200 günlük ort. altına indi veya 126 günlük getiri negatife döndü |
 | 2026-11-12 | Momentum 6 ay | SAT | AMZN | 267.92 | 96.21 | Son 126 günlük getiri negatife döndü |
-| 2026-11-12 | MACD | AL | AAPL | 357.81 | 98.66 | MACD sinyal çizgisini yukarı kesti |
-| 2026-11-12 | Gradient Boosting ML | SAT | GOOGL | 293.77 | 91.47 | Model yükseliş ihtimalini <=%52 gördü |
 
-**Son veri:** 2026-11-13 | **Takip gunu:** 17 | **Baslangic:** 2026-10-22
+**Son veri:** 2026-11-16 | **Takip gunu:** 18 | **Baslangic:** 2026-10-22
 
-Al-ve-tut referansi: %-4.38. Referansi gecen: Bollinger Dönüş, MACD Trend, SMA 20/100 Kesişim, 6 Ay Momentum, RSI Ortalamaya Dönüş, ML: Gradient Boosting (walk-forward).
+Al-ve-tut referansi: %-6.75. Referansi gecen: Bollinger Dönüş, SMA 20/100 Kesişim, MACD Trend, 6 Ay Momentum, RSI Ortalamaya Dönüş, ML: Gradient Boosting (walk-forward).
 
 | Strateji | Getiri % | Maks. dusus % | Sepet pozisyonu (son sinyal) |
 |---|---:|---:|---:|
-| Bollinger Dönüş | -0.96 | -2.67 | 5/10 hisse |
-| MACD Trend | -2.39 | -2.37 | 4/10 hisse |
-| SMA 20/100 Kesişim | -2.41 | -4.70 | 5/10 hisse |
-| 6 Ay Momentum | -2.63 | -3.22 | 6/10 hisse |
-| RSI Ortalamaya Dönüş | -3.23 | -3.76 | 4/10 hisse |
-| ML: Gradient Boosting (walk-forward) | -3.24 | -4.14 | 6/10 hisse |
-| Buy & Hold (referans) | -4.38 | -6.61 | 10/10 hisse |
-| ML: Lojistik (walk-forward) | -5.51 | -6.23 | 6/10 hisse |
+| Bollinger Dönüş | -2.38 | -2.67 | 5/10 hisse |
+| SMA 20/100 Kesişim | -3.37 | -4.70 | 5/10 hisse |
+| MACD Trend | -3.43 | -3.15 | 4/10 hisse |
+| 6 Ay Momentum | -3.73 | -3.41 | 5/10 hisse |
+| RSI Ortalamaya Dönüş | -4.39 | -4.92 | 4/10 hisse |
+| ML: Gradient Boosting (walk-forward) | -4.72 | -4.14 | 6/10 hisse |
+| Buy & Hold (referans) | -6.75 | -6.66 | 10/10 hisse |
+| ML: Lojistik (walk-forward) | -6.92 | -6.23 | 7/10 hisse |
 
-Son sinyal tarihi: 2026-11-13. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
+Son sinyal tarihi: 2026-11-16. Sanal portfoy, gercek para yok. Yatirim tavsiyesi degildir.
 
 ## Gercek repolar: FinRL ve qlib (2025 ve 2026 testi)
 
