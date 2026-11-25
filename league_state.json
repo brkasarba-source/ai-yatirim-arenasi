@@ -222,9 +222,13 @@
     [
      "2026-11-23",
      936.11
+    ],
+    [
+     "2026-11-24",
+     929.81
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "SMA 20/100": {
    "cash": 484.87852163368507,
@@ -451,12 +455,16 @@
     [
      "2026-11-23",
      973.38
+    ],
+    [
+     "2026-11-24",
+     974.79
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "Bollinger": {
-   "cash": 241.73050345877982,
+   "cash": 342.76796234402866,
    "pos": {
     "QQQ": 0.14240956744745367,
     "NVDA": 0.4739560993245243,
@@ -464,8 +472,7 @@
     "SPY": 0.13024845655590964,
     "XOM": 0.6071926247841449,
     "JPM": 0.30417517726678134,
-    "MSFT": 0.19525014642684121,
-    "TSLA": 0.26367158883225755
+    "MSFT": 0.19525014642684121
    },
    "pending": {
     "SPY": 1.0,
@@ -639,6 +646,16 @@
      "value": 98.81,
      "fee": 0.15,
      "reason": "Fiyat alt Bollinger band\u0131n\u0131n alt\u0131na d\u00fc\u015ft\u00fc (a\u015f\u0131r\u0131 sat\u0131m)"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.263672,
+     "price": 383.77,
+     "value": 101.19,
+     "fee": 0.15,
+     "reason": "Fiyat orta banda geri d\u00f6nd\u00fc"
     }
    ],
    "equity": [
@@ -733,9 +750,13 @@
     [
      "2026-11-23",
      983.97
+    ],
+    [
+     "2026-11-24",
+     977.19
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "RSI": {
    "cash": 409.0656973182443,
@@ -756,7 +777,7 @@
     "AMZN": 0.0,
     "GOOGL": 1.0,
     "TSLA": 0.0,
-    "JPM": 0.0,
+    "JPM": 1.0,
     "XOM": 1.0
    },
    "trades": [
@@ -913,9 +934,13 @@
     [
      "2026-11-23",
      951.08
+    ],
+    [
+     "2026-11-24",
+     944.77
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "Momentum 6 ay": {
    "cash": 567.217940459006,
@@ -1251,28 +1276,30 @@
     [
      "2026-11-23",
      944.9
+    ],
+    [
+     "2026-11-24",
+     947.9
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "Lojistik ML": {
-   "cash": 216.0831636792837,
+   "cash": 387.8311717608655,
    "pos": {
     "SPY": 0.1315962584382165,
     "QQQ": 0.14240956744745367,
     "AAPL": 0.2864344678007728,
-    "NVDA": 0.4739560993245243,
     "GOOGL": 0.31138098054030416,
     "MSFT": 0.18156131633982658,
-    "AMZN": 0.37028393843157825,
-    "TSLA": 0.2517122275772091
+    "AMZN": 0.37028393843157825
    },
    "pending": {
     "SPY": 1.0,
     "QQQ": 1.0,
     "AAPL": 1.0,
     "MSFT": 1.0,
-    "NVDA": 0.0,
+    "NVDA": 1.0,
     "AMZN": 1.0,
     "GOOGL": 1.0,
     "TSLA": 0.0,
@@ -1439,6 +1466,26 @@
      "value": 93.24,
      "fee": 0.14,
      "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "NVDA",
+     "side": "SAT",
+     "shares": 0.473956,
+     "price": 159.1,
+     "value": 75.41,
+     "fee": 0.11,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.251712,
+     "price": 383.77,
+     "value": 96.6,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
     }
    ],
    "equity": [
@@ -1533,9 +1580,13 @@
     [
      "2026-11-23",
      950.91
+    ],
+    [
+     "2026-11-24",
+     945.1
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "Trend EW (bizim bot)": {
    "cash": 662.2022598321245,
@@ -1880,13 +1931,19 @@
     [
      "2026-11-23",
      944.79
+    ],
+    [
+     "2026-11-24",
+     947.66
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "MACD": {
-   "cash": 969.8467149359461,
-   "pos": {},
+   "cash": 872.7165664351111,
+   "pos": {
+    "GOOGL": 0.3444057861914365
+   },
    "pending": {
     "SPY": 0.0,
     "QQQ": 0.0,
@@ -2099,6 +2156,16 @@
      "value": 92.62,
      "fee": 0.14,
      "reason": "MACD sinyal \u00e7izgisini a\u015fa\u011f\u0131 kesti"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "GOOGL",
+     "side": "AL",
+     "shares": 0.344406,
+     "price": 281.6,
+     "value": 96.98,
+     "fee": 0.15,
+     "reason": "MACD sinyal \u00e7izgisini yukar\u0131 kesti"
     }
    ],
    "equity": [
@@ -2193,33 +2260,32 @@
     [
      "2026-11-23",
      969.85
+    ],
+    [
+     "2026-11-24",
+     968.82
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "Gradient Boosting ML": {
-   "cash": 192.90710720567782,
+   "cash": 650.0646955941356,
    "pos": {
-    "SPY": 0.12755241312454788,
-    "NVDA": 0.5604460772581714,
-    "QQQ": 0.14039167194054547,
-    "MSFT": 0.18666993186256406,
-    "GOOGL": 0.3357610576862435,
-    "XOM": 0.5802833801696357,
     "AMZN": 0.36172411059801163,
-    "TSLA": 0.2512203741528113
+    "AAPL": 0.2666812488733878,
+    "JPM": 0.2948760251342213
    },
    "pending": {
-    "SPY": 0.0,
+    "SPY": 1.0,
     "QQQ": 0.0,
     "AAPL": 1.0,
-    "MSFT": 0.0,
-    "NVDA": 0.0,
+    "MSFT": 1.0,
+    "NVDA": 1.0,
     "AMZN": 1.0,
-    "GOOGL": 0.0,
+    "GOOGL": 1.0,
     "TSLA": 0.0,
     "JPM": 1.0,
-    "XOM": 0.0
+    "XOM": 1.0
    },
    "trades": [
     {
@@ -2921,6 +2987,96 @@
      "value": 94.14,
      "fee": 0.14,
      "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "SPY",
+     "side": "SAT",
+     "shares": 0.127552,
+     "price": 715.15,
+     "value": 91.22,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "NVDA",
+     "side": "SAT",
+     "shares": 0.560446,
+     "price": 159.1,
+     "value": 89.17,
+     "fee": 0.13,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "QQQ",
+     "side": "SAT",
+     "shares": 0.140392,
+     "price": 640.04,
+     "value": 89.86,
+     "fee": 0.13,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "MSFT",
+     "side": "SAT",
+     "shares": 0.18667,
+     "price": 490.13,
+     "value": 91.49,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "GOOGL",
+     "side": "SAT",
+     "shares": 0.335761,
+     "price": 281.6,
+     "value": 94.55,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "XOM",
+     "side": "SAT",
+     "shares": 0.580283,
+     "price": 157.42,
+     "value": 91.35,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "TSLA",
+     "side": "SAT",
+     "shares": 0.25122,
+     "price": 383.77,
+     "value": 96.41,
+     "fee": 0.14,
+     "reason": "Model y\u00fckseli\u015f ihtimalini <=%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "AAPL",
+     "side": "AL",
+     "shares": 0.266681,
+     "price": 348.06,
+     "value": 92.82,
+     "fee": 0.14,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
+    },
+    {
+     "date": "2026-11-24",
+     "tic": "JPM",
+     "side": "AL",
+     "shares": 0.294876,
+     "price": 314.78,
+     "value": 92.82,
+     "fee": 0.14,
+     "reason": "Model yar\u0131n i\u00e7in y\u00fckseli\u015f ihtimalini >%52 g\u00f6rd\u00fc"
     }
    ],
    "equity": [
@@ -3015,9 +3171,13 @@
     [
      "2026-11-23",
      935.85
+    ],
+    [
+     "2026-11-24",
+     929.25
     ]
    ],
-   "last_date": "2026-11-23"
+   "last_date": "2026-11-24"
   },
   "FinRL PPO": {
    "cash": 740.3594472187779,
