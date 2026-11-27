@@ -45,7 +45,7 @@ Al-ve-tut referansi: %-9.77. Referansi gecen: Bollinger Dönüş, SMA 20/100 Kes
 |---|---:|---:|---:|
 | Bollinger Dönüş | -3.08 | -6.90 | 7/10 hisse |
 | SMA 20/100 Kesişim | -4.71 | -6.02 | 5/10 hisse |
-| ML: Gradient Boosting (walk-forward) | -5.01 | -8.76 | 8/10 hisse |
+| ML: Gradient Boosting (walk-forward) | -5.07 | -8.76 | 8/10 hisse |
 | MACD Trend | -5.17 | -4.90 | 1/10 hisse |
 | RSI Ortalamaya Dönüş | -5.47 | -8.90 | 7/10 hisse |
 | 6 Ay Momentum | -5.83 | -6.06 | 4/10 hisse |
